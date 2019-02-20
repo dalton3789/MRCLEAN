@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.6</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
@@ -28,6 +28,8 @@
 	<string>$(Clean) camera use</string>
 	<key>Privacy - Photo Library Usage Description</key>
 	<string>$(Clean) photo use</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to book services</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIBackgroundModes</key>

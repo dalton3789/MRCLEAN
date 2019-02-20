@@ -15,8 +15,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return [self.VCInstance(name: "MasterServicesViewController"),
         self.VCInstance(name: "BasicServiceViewController"),
         self.VCInstance(name: "ThirdViewController"),
-        self.VCInstance(name: "FourthViewController"),
-        self.VCInstance(name: "FifthViewController")]
+        self.VCInstance(name: "FourthViewController")]
+            //,self.VCInstance(name: "FifthViewController")
     }()
     
     private func VCInstance(name: String)-> UIViewController{

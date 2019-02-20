@@ -58,6 +58,17 @@ struct CFNewMessage{
     var isReplied = ""
 }
 
+class ServiceRequest{
+    var name = ""
+    var address = ""
+    var email = ""
+    var phone = ""
+    var date = ""
+    var startTime = ""
+    var endTime = ""
+    var note = ""
+    var total = ""
+}
 
 
 

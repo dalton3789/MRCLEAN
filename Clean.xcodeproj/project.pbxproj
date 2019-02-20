@@ -40,7 +40,18 @@
 		1AF5200F1F0BA27D005720E2 /* Clean.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5200D1F0BA27D005720E2 /* Clean.xcdatamodeld */; };
 		1AF520111F0BA27D005720E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF520101F0BA27D005720E2 /* Assets.xcassets */; };
 		1AF520141F0BA27D005720E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF520121F0BA27D005720E2 /* LaunchScreen.storyboard */; };
+		A708A3DE221CF780003DBF5C /* BookService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A708A3DD221CF780003DBF5C /* BookService.storyboard */; };
+		A708A3E1221D017F003DBF5C /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E0221D017F003DBF5C /* Step1ViewController.swift */; };
+		A708A3E3221D0522003DBF5C /* PickerDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E2221D0522003DBF5C /* PickerDefinition.swift */; };
+		A708A3E5221D0E38003DBF5C /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E4221D0E38003DBF5C /* Step2ViewController.swift */; };
+		A708A3E7221D11AF003DBF5C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E6221D11AF003DBF5C /* Order.swift */; };
+		A708A3E9221D390A003DBF5C /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E8221D390A003DBF5C /* SharedFunctions.swift */; };
+		A708A3EB221D397C003DBF5C /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */; };
+		A7BA04C3221C25B100B14FFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA04C2221C25B100B14FFE /* CoreLocation.framework */; };
+		A7BA04C5221C270300B14FFE /* BookServicesLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA04C4221C270300B14FFE /* BookServicesLocationViewController.swift */; };
 		AE382FC1B896C35880B920F8 /* libPods-Clean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */; };
+		E82614A6209F50970010FE32 /* ReviewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82614A5209F50970010FE32 /* ReviewRequestViewController.swift */; };
+		E87755B6209EBDBC005305E2 /* BookHourServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87755B5209EBDBC005305E2 /* BookHourServiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +64,7 @@
 		1A0F194E1F10934000A7C52C /* CustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		1A0F19501F10C4F900A7C52C /* SchedulleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulleViewController.swift; sourceTree = "<group>"; };
 		1A0F19521F10C65900A7C52C /* ServerCominucation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCominucation.swift; sourceTree = "<group>"; };
-		1A13E2271F57CCE500142E13 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FifthViewController.swift; path = ../FifthViewController.swift; sourceTree = "<group>"; };
+		1A13E2271F57CCE500142E13 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		1A1BA8611F4BF7E80090398E /* Clean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clean.entitlements; sourceTree = "<group>"; };
 		1A2BD8301F35B42D008AE9B0 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		1A468A911F26EA61004872A3 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -81,7 +92,18 @@
 		1AF520131F0BA27D005720E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AF520151F0BA27D005720E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A708A3DD221CF780003DBF5C /* BookService.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookService.storyboard; sourceTree = "<group>"; };
+		A708A3E0221D017F003DBF5C /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		A708A3E2221D0522003DBF5C /* PickerDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDefinition.swift; sourceTree = "<group>"; };
+		A708A3E4221D0E38003DBF5C /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
+		A708A3E6221D11AF003DBF5C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A708A3E8221D390A003DBF5C /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
+		A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
+		A7BA04C2221C25B100B14FFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A7BA04C4221C270300B14FFE /* BookServicesLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookServicesLocationViewController.swift; sourceTree = "<group>"; };
 		B626304FF9034A2B16602BC5 /* Pods-Clean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clean/Pods-Clean.release.xcconfig"; sourceTree = "<group>"; };
+		E82614A5209F50970010FE32 /* ReviewRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestViewController.swift; sourceTree = "<group>"; };
+		E87755B5209EBDBC005305E2 /* BookHourServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHourServiceViewController.swift; sourceTree = "<group>"; };
 		F5598F7DDF97474E9BB7D5F4 /* Pods-Clean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clean/Pods-Clean.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BA04C3221C25B100B14FFE /* CoreLocation.framework in Frameworks */,
 				AE382FC1B896C35880B920F8 /* libPods-Clean.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +125,9 @@
 			children = (
 				1A67D00E1F2C2E61001EE217 /* UserValidation.swift */,
 				1A9ED0C01F2C502600968AF3 /* Message.swift */,
+				A708A3E2221D0522003DBF5C /* PickerDefinition.swift */,
+				A708A3E6221D11AF003DBF5C /* Order.swift */,
+				A708A3E8221D390A003DBF5C /* SharedFunctions.swift */,
 			);
 			name = sharedactions;
 			sourceTree = "<group>";
@@ -143,18 +169,45 @@
 		1AF520051F0BA27D005720E2 /* Clean */ = {
 			isa = PBXGroup;
 			children = (
+				A708A3DC221CF749003DBF5C /* ViewControllers */,
+				A708A3DB221CF736003DBF5C /* Storyboard */,
 				1A1BA8611F4BF7E80090398E /* Clean.entitlements */,
 				1A51314F1F2C513200A31C9C /* sharedactions */,
 				1A8F512E1F0C7FD200103966 /* data */,
 				1AF520061F0BA27D005720E2 /* AppDelegate.swift */,
-				1AF520081F0BA27D005720E2 /* ViewController.swift */,
-				1AF5200A1F0BA27D005720E2 /* Main.storyboard */,
-				1A64775E1F1F18650002273F /* ChangeScheduleViewController.swift */,
-				1A0017BE1F14AAF300F4170E /* BasicServiceViewController.swift */,
 				1AF520101F0BA27D005720E2 /* Assets.xcassets */,
-				1AF520121F0BA27D005720E2 /* LaunchScreen.storyboard */,
 				1AF520151F0BA27D005720E2 /* Info.plist */,
 				1AF5200D1F0BA27D005720E2 /* Clean.xcdatamodeld */,
+			);
+			path = Clean;
+			sourceTree = "<group>";
+		};
+		8E8D6C3F55F3F804AA97166D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5598F7DDF97474E9BB7D5F4 /* Pods-Clean.debug.xcconfig */,
+				B626304FF9034A2B16602BC5 /* Pods-Clean.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A708A3DB221CF736003DBF5C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1AF520121F0BA27D005720E2 /* LaunchScreen.storyboard */,
+				1AF5200A1F0BA27D005720E2 /* Main.storyboard */,
+				A708A3DD221CF780003DBF5C /* BookService.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		A708A3DC221CF749003DBF5C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A708A3DF221CFA63003DBF5C /* BookServiceControllers */,
+				1AF520081F0BA27D005720E2 /* ViewController.swift */,
+				1A64775E1F1F18650002273F /* ChangeScheduleViewController.swift */,
+				1A0017BE1F14AAF300F4170E /* BasicServiceViewController.swift */,
 				1A8F512A1F0C7BC800103966 /* ActivationViewController.swift */,
 				1A8F512C1F0C7EB900103966 /* RequestViewController.swift */,
 				1A66795C1F0E3C32002BF0E0 /* LoadGif.swift */,
@@ -169,22 +222,27 @@
 				1A13E2271F57CCE500142E13 /* FifthViewController.swift */,
 				1A0E844E1F19C6BF00B8A34C /* ExtendContractViewController.swift */,
 				1A2BD8301F35B42D008AE9B0 /* MessageViewController.swift */,
+				E87755B5209EBDBC005305E2 /* BookHourServiceViewController.swift */,
+				E82614A5209F50970010FE32 /* ReviewRequestViewController.swift */,
+				A7BA04C4221C270300B14FFE /* BookServicesLocationViewController.swift */,
 			);
-			path = Clean;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		8E8D6C3F55F3F804AA97166D /* Pods */ = {
+		A708A3DF221CFA63003DBF5C /* BookServiceControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F5598F7DDF97474E9BB7D5F4 /* Pods-Clean.debug.xcconfig */,
-				B626304FF9034A2B16602BC5 /* Pods-Clean.release.xcconfig */,
+				A708A3E0221D017F003DBF5C /* Step1ViewController.swift */,
+				A708A3E4221D0E38003DBF5C /* Step2ViewController.swift */,
+				A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */,
 			);
-			name = Pods;
+			name = BookServiceControllers;
 			sourceTree = "<group>";
 		};
 		DCA35B85ADACEBC02B980420 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7BA04C2221C25B100B14FFE /* CoreLocation.framework */,
 				4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */,
 			);
 			name = Frameworks;
@@ -266,6 +324,7 @@
 				1A4F3A871F3B0B56006458D9 /* Messenger.gif in Resources */,
 				1ADBCD321F39CC3700E2E0AF /* Calendar.gif in Resources */,
 				1AF520111F0BA27D005720E2 /* Assets.xcassets in Resources */,
+				A708A3DE221CF780003DBF5C /* BookService.storyboard in Resources */,
 				1A0BD8B61F4D30330080E77F /* GoogleService-Info.plist in Resources */,
 				1A4F3A851F3AF025006458D9 /* profile.gif in Resources */,
 				1A6679631F0E48E4002BF0E0 /* 1.gif in Resources */,
@@ -338,15 +397,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A708A3E9221D390A003DBF5C /* SharedFunctions.swift in Sources */,
+				A708A3E1221D017F003DBF5C /* Step1ViewController.swift in Sources */,
+				A708A3E5221D0E38003DBF5C /* Step2ViewController.swift in Sources */,
+				A7BA04C5221C270300B14FFE /* BookServicesLocationViewController.swift in Sources */,
 				1A838FE21F1719D50060773F /* ThirdViewController.swift in Sources */,
 				1A0F194F1F10934000A7C52C /* CustomerViewController.swift in Sources */,
+				A708A3EB221D397C003DBF5C /* ConfirmBookingViewController.swift in Sources */,
+				E82614A6209F50970010FE32 /* ReviewRequestViewController.swift in Sources */,
 				1A0017C51F14BCEA00F4170E /* WebViewController.swift in Sources */,
 				1A0F19531F10C65900A7C52C /* ServerCominucation.swift in Sources */,
 				1A8F51301F0C7FE300103966 /* DataModification.swift in Sources */,
+				A708A3E7221D11AF003DBF5C /* Order.swift in Sources */,
 				1AF520091F0BA27D005720E2 /* ViewController.swift in Sources */,
 				1A8F512D1F0C7EB900103966 /* RequestViewController.swift in Sources */,
 				1A0F19511F10C4F900A7C52C /* SchedulleViewController.swift in Sources */,
 				1A2BD8311F35B42D008AE9B0 /* MessageViewController.swift in Sources */,
+				E87755B6209EBDBC005305E2 /* BookHourServiceViewController.swift in Sources */,
 				1A0017C31F14B5C800F4170E /* PageViewController.swift in Sources */,
 				1A8F512B1F0C7BC800103966 /* ActivationViewController.swift in Sources */,
 				1A0E844F1F19C6BF00B8A34C /* ExtendContractViewController.swift in Sources */,
@@ -359,6 +426,7 @@
 				1A6679611F0E40B7002BF0E0 /* OrderViewController.swift in Sources */,
 				1A468A921F26EA61004872A3 /* Config.swift in Sources */,
 				1AF5200F1F0BA27D005720E2 /* Clean.xcdatamodeld in Sources */,
+				A708A3E3221D0522003DBF5C /* PickerDefinition.swift in Sources */,
 				1A9ED0C11F2C502600968AF3 /* Message.swift in Sources */,
 				1A0017BF1F14AAF400F4170E /* BasicServiceViewController.swift in Sources */,
 				1A64775F1F1F18650002273F /* ChangeScheduleViewController.swift in Sources */,
@@ -428,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -473,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -494,7 +562,7 @@
 				DEVELOPMENT_TEAM = AFGW448WN5;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Clean/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.quickstart.FF.MessagingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,7 +584,7 @@
 				DEVELOPMENT_TEAM = AFGW448WN5;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Clean/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.quickstart.FF.MessagingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
