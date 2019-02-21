@@ -47,6 +47,8 @@
 		A708A3E7221D11AF003DBF5C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E6221D11AF003DBF5C /* Order.swift */; };
 		A708A3E9221D390A003DBF5C /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E8221D390A003DBF5C /* SharedFunctions.swift */; };
 		A708A3EB221D397C003DBF5C /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */; };
+		A731388B221E650C00F47C96 /* ReviewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731388A221E650C00F47C96 /* ReviewBookViewController.swift */; };
+		A731388D221EA1E200F47C96 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731388C221EA1E200F47C96 /* CustomIndicator.swift */; };
 		A7BA04C3221C25B100B14FFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA04C2221C25B100B14FFE /* CoreLocation.framework */; };
 		A7BA04C5221C270300B14FFE /* BookServicesLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA04C4221C270300B14FFE /* BookServicesLocationViewController.swift */; };
 		AE382FC1B896C35880B920F8 /* libPods-Clean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */; };
@@ -99,6 +101,8 @@
 		A708A3E6221D11AF003DBF5C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A708A3E8221D390A003DBF5C /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
 		A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
+		A731388A221E650C00F47C96 /* ReviewBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBookViewController.swift; sourceTree = "<group>"; };
+		A731388C221EA1E200F47C96 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		A7BA04C2221C25B100B14FFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A7BA04C4221C270300B14FFE /* BookServicesLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookServicesLocationViewController.swift; sourceTree = "<group>"; };
 		B626304FF9034A2B16602BC5 /* Pods-Clean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clean/Pods-Clean.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				A708A3E2221D0522003DBF5C /* PickerDefinition.swift */,
 				A708A3E6221D11AF003DBF5C /* Order.swift */,
 				A708A3E8221D390A003DBF5C /* SharedFunctions.swift */,
+				A731388C221EA1E200F47C96 /* CustomIndicator.swift */,
 			);
 			name = sharedactions;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				A708A3E0221D017F003DBF5C /* Step1ViewController.swift */,
 				A708A3E4221D0E38003DBF5C /* Step2ViewController.swift */,
 				A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */,
+				A731388A221E650C00F47C96 /* ReviewBookViewController.swift */,
 			);
 			name = BookServiceControllers;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A708A3E9221D390A003DBF5C /* SharedFunctions.swift in Sources */,
+				A731388B221E650C00F47C96 /* ReviewBookViewController.swift in Sources */,
 				A708A3E1221D017F003DBF5C /* Step1ViewController.swift in Sources */,
 				A708A3E5221D0E38003DBF5C /* Step2ViewController.swift in Sources */,
 				A7BA04C5221C270300B14FFE /* BookServicesLocationViewController.swift in Sources */,
@@ -420,6 +427,7 @@
 				1A13E2281F57CCE500142E13 /* FifthViewController.swift in Sources */,
 				1A66795D1F0E3C32002BF0E0 /* LoadGif.swift in Sources */,
 				1A838FE41F17272F0060773F /* FourthViewController.swift in Sources */,
+				A731388D221EA1E200F47C96 /* CustomIndicator.swift in Sources */,
 				1AF520071F0BA27D005720E2 /* AppDelegate.swift in Sources */,
 				1A67D00F1F2C2E61001EE217 /* UserValidation.swift in Sources */,
 				1A0017BD1F14AAC200F4170E /* MasterServicesViewController.swift in Sources */,

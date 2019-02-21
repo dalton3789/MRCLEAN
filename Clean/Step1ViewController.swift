@@ -67,6 +67,7 @@ class Step1ViewController: UIViewController {
     func dissmissInput(){
         txt_dateTime.resignFirstResponder()
         txt_total.resignFirstResponder()
+        txt_note.resignFirstResponder()
     }
     
     @objc func setTextAfterSelected(){
@@ -85,18 +86,42 @@ class Step1ViewController: UIViewController {
     }
     
     @IBAction func confirm(_ sender: UIButton) {
-        performSegue(withIdentifier: "segue_personalDetail", sender: self)
+        if validateAll() {
+            performSegue(withIdentifier: "segue_personalDetail", sender: self)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue_personalDetail" {
             let view = segue.destination as! Step2ViewController
-            var order = view.order
+            let order = view.order
             order.date = txt_dateTime.text!
             order.totalTime = lbl_totalTime.text!
             order.totalCost = lbl_totalCost.text!
             order.note = txt_note.text!
         }
+    }
+    
+    func validateAll() -> Bool {
+        var isValid = true
+        
+        if ((txt_dateTime.text?.isEmpty)!){
+            showAlert(view: self, title: "Lỗi", alert: "Vui lòng nhập ngày giờ đặt dịch vụ")
+            isValid = false
+        }
+        if ((txt_total.text?.isEmpty)!){
+            showAlert(view: self, title: "Lỗi", alert: "Vui lòng chọn số giờ đặt dịch vụ")
+            isValid = false
+        }
+        
+        return isValid
+    }
+    
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+       
+        self.dismiss(animated: true, completion: {})
     }
     
 }

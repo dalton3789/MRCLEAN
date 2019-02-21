@@ -207,7 +207,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Eso-VV-dMi"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ĐẶT DỊCH VỤ" id="81z-6A-GtJ"/>
+                    <navigationItem key="navigationItem" title="ĐẶT DỊCH VỤ" id="81z-6A-GtJ">
+                        <barButtonItem key="leftBarButtonItem" title="Huỷ" id="Viu-4q-pah">
+                            <connections>
+                                <action selector="cancel:" destination="DYG-qM-TXE" id="Wp7-av-4dM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btn_done" destination="Hfe-2b-dS1" id="aN7-ME-i4V"/>
                         <outlet property="lbl_cost" destination="6AO-aE-AYY" id="4tS-Tr-8OA"/>
@@ -244,40 +250,29 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điện thoại" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYu-6e-BdX">
-                                <rect key="frame" x="16" y="393" width="343" height="21"/>
+                                <rect key="frame" x="16" y="181.5" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-oa-muC">
-                                <rect key="frame" x="16" y="424" width="343" height="46.5"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-1h-UQy">
-                                <rect key="frame" x="16" y="181.5" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2xK-C4-ntI">
                                 <rect key="frame" x="16" y="212.5" width="343" height="47"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-aH-XA5">
-                                <rect key="frame" x="16" y="326" width="343" height="47"/>
-                                <color key="backgroundColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-1h-UQy">
+                                <rect key="frame" x="16" y="279.5" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Dùng địa chỉ hiện tai">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="getCurrentLocation:" destination="wVR-ZO-yVl" eventType="touchUpInside" id="QaW-PS-kQo"/>
-                                </connections>
-                            </button>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2xK-C4-ntI">
+                                <rect key="frame" x="16" y="367" width="343" height="47"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deb-EW-dUS">
                                 <rect key="frame" x="0.0" y="620.5" width="375" height="46.5"/>
                                 <color key="backgroundColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -291,65 +286,82 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số căn hộ (nếu có)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGl-bW-ejs">
-                                <rect key="frame" x="16" y="269.5" width="150" height="46.5"/>
+                                <rect key="frame" x="16" y="310.5" width="150" height="46.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên căn hộ (nếu có)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-mv-vXQ">
-                                <rect key="frame" x="209" y="269.5" width="150" height="46.5"/>
+                                <rect key="frame" x="209" y="310.5" width="150" height="46.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OYT-Cj-U22">
+                                <rect key="frame" x="16" y="480.5" width="343" height="120"/>
+                            </mapView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-aH-XA5">
+                                <rect key="frame" x="16" y="424" width="343" height="46.5"/>
+                                <color key="backgroundColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Dùng địa chỉ hiện tai">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCurrentLocation:" destination="wVR-ZO-yVl" eventType="touchUpInside" id="QaW-PS-kQo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bGl-bW-ejs" firstAttribute="height" secondItem="2xK-C4-ntI" secondAttribute="height" id="0CC-77-jJE"/>
                             <constraint firstItem="deb-EW-dUS" firstAttribute="height" secondItem="Vrb-PN-CZF" secondAttribute="height" multiplier="0.07" id="10x-ec-pAu"/>
-                            <constraint firstItem="Snr-mv-vXQ" firstAttribute="height" secondItem="2xK-C4-ntI" secondAttribute="height" id="1pf-cD-6Oy"/>
+                            <constraint firstItem="Snr-mv-vXQ" firstAttribute="top" secondItem="bGl-bW-ejs" secondAttribute="top" id="1eP-LP-FR0"/>
                             <constraint firstItem="Bfj-oa-muC" firstAttribute="height" secondItem="K2A-Zm-dsg" secondAttribute="height" id="3Lj-0a-4o0"/>
-                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="rYu-6e-BdX" secondAttribute="trailing" constant="16" id="691-5C-mn3"/>
-                            <constraint firstItem="rYu-6e-BdX" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="9xd-GB-dBB"/>
+                            <constraint firstItem="bGl-bW-ejs" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="4X1-Hr-oft"/>
+                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="OYT-Cj-U22" secondAttribute="trailing" constant="16" id="923-NI-U36"/>
+                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="aZO-aH-XA5" secondAttribute="trailing" constant="16" id="9NI-JH-En2"/>
+                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="rYu-6e-BdX" secondAttribute="trailing" constant="16" id="9Tg-yQ-bkt"/>
                             <constraint firstItem="deb-EW-dUS" firstAttribute="trailing" secondItem="2Qn-l6-31h" secondAttribute="trailing" id="BE9-yG-3zX"/>
-                            <constraint firstItem="bGl-bW-ejs" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="BWO-eb-Vvn"/>
-                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="7E6-1h-UQy" secondAttribute="trailing" constant="16" id="Epp-70-7Ph"/>
+                            <constraint firstItem="7E6-1h-UQy" firstAttribute="top" secondItem="Bfj-oa-muC" secondAttribute="bottom" constant="20" id="Bmq-sM-pXu"/>
+                            <constraint firstItem="deb-EW-dUS" firstAttribute="top" secondItem="OYT-Cj-U22" secondAttribute="bottom" constant="20" id="Dbw-Pc-lmS"/>
                             <constraint firstItem="deb-EW-dUS" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" id="FzM-ma-FOq"/>
-                            <constraint firstItem="7E6-1h-UQy" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="Hfw-JQ-mXA"/>
                             <constraint firstItem="K2A-Zm-dsg" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="IjC-K9-FcC"/>
-                            <constraint firstItem="Snr-mv-vXQ" firstAttribute="top" secondItem="bGl-bW-ejs" secondAttribute="top" id="ItN-QL-JpZ"/>
                             <constraint firstItem="v3L-UK-och" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="J3g-VY-f8w"/>
-                            <constraint firstItem="rYu-6e-BdX" firstAttribute="top" secondItem="aZO-aH-XA5" secondAttribute="bottom" constant="20" id="KW0-2w-jFN"/>
-                            <constraint firstItem="2xK-C4-ntI" firstAttribute="top" secondItem="7E6-1h-UQy" secondAttribute="bottom" constant="10" id="PHO-fU-P0b"/>
+                            <constraint firstItem="2xK-C4-ntI" firstAttribute="height" secondItem="Bfj-oa-muC" secondAttribute="height" id="JDw-fn-Xfj"/>
+                            <constraint firstItem="aZO-aH-XA5" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="Plg-Ig-y4f"/>
+                            <constraint firstItem="Bfj-oa-muC" firstAttribute="top" secondItem="rYu-6e-BdX" secondAttribute="bottom" constant="10" id="QnB-oy-NQv"/>
                             <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="K2A-Zm-dsg" secondAttribute="trailing" constant="16" id="RnQ-Ho-Y2a"/>
                             <constraint firstItem="K2A-Zm-dsg" firstAttribute="top" secondItem="v3L-UK-och" secondAttribute="bottom" constant="10" id="SKH-vS-Ry1"/>
                             <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="Bfj-oa-muC" secondAttribute="trailing" constant="16" id="UM9-WG-zYN"/>
-                            <constraint firstItem="aZO-aH-XA5" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="WSa-0H-L9V"/>
-                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="Snr-mv-vXQ" secondAttribute="trailing" constant="16" id="X4c-rH-77F"/>
+                            <constraint firstItem="OYT-Cj-U22" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="XSL-Rj-VpM"/>
+                            <constraint firstItem="bGl-bW-ejs" firstAttribute="top" secondItem="7E6-1h-UQy" secondAttribute="bottom" constant="10" id="YKc-4w-ssj"/>
                             <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="v3L-UK-och" secondAttribute="trailing" constant="16" id="YrC-yL-Q1o"/>
-                            <constraint firstItem="aZO-aH-XA5" firstAttribute="top" secondItem="bGl-bW-ejs" secondAttribute="bottom" constant="10" id="aDJ-YI-Tdm"/>
-                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="aZO-aH-XA5" secondAttribute="trailing" constant="16" id="apm-XZ-rgl"/>
-                            <constraint firstItem="bGl-bW-ejs" firstAttribute="width" secondItem="Vrb-PN-CZF" secondAttribute="width" multiplier="0.4" id="cfC-8u-R4H"/>
-                            <constraint firstItem="bGl-bW-ejs" firstAttribute="height" secondItem="2xK-C4-ntI" secondAttribute="height" id="emn-y8-f6D"/>
-                            <constraint firstItem="7E6-1h-UQy" firstAttribute="top" secondItem="K2A-Zm-dsg" secondAttribute="bottom" constant="20" id="fR3-Sh-D5O"/>
+                            <constraint firstItem="rYu-6e-BdX" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="ZfQ-8v-5xn"/>
+                            <constraint firstItem="Snr-mv-vXQ" firstAttribute="height" secondItem="bGl-bW-ejs" secondAttribute="height" id="egP-ch-kvE"/>
+                            <constraint firstItem="bGl-bW-ejs" firstAttribute="width" secondItem="Vrb-PN-CZF" secondAttribute="width" multiplier="0.4" id="gTG-yN-5em"/>
                             <constraint firstItem="2Qn-l6-31h" firstAttribute="bottom" secondItem="deb-EW-dUS" secondAttribute="bottom" id="hKA-i6-Iqt"/>
+                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="7E6-1h-UQy" secondAttribute="trailing" constant="16" id="hTi-oy-WiQ"/>
                             <constraint firstItem="v3L-UK-och" firstAttribute="top" secondItem="2Qn-l6-31h" secondAttribute="top" constant="20" id="hqa-Yx-sV7"/>
-                            <constraint firstItem="2xK-C4-ntI" firstAttribute="height" secondItem="K2A-Zm-dsg" secondAttribute="height" id="m45-3z-BXb"/>
+                            <constraint firstItem="Snr-mv-vXQ" firstAttribute="width" secondItem="bGl-bW-ejs" secondAttribute="width" id="klp-vm-OYe"/>
                             <constraint firstItem="K2A-Zm-dsg" firstAttribute="height" secondItem="Vrb-PN-CZF" secondAttribute="height" multiplier="0.07" id="mdm-6A-BNX"/>
                             <constraint firstItem="Bfj-oa-muC" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="moo-do-Sjg"/>
-                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="2xK-C4-ntI" secondAttribute="trailing" constant="16" id="nBk-Ek-eDt"/>
-                            <constraint firstItem="Bfj-oa-muC" firstAttribute="top" secondItem="rYu-6e-BdX" secondAttribute="bottom" constant="10" id="nDK-0r-OZM"/>
-                            <constraint firstItem="aZO-aH-XA5" firstAttribute="height" secondItem="2xK-C4-ntI" secondAttribute="height" id="qpN-ba-V9Y"/>
-                            <constraint firstItem="Snr-mv-vXQ" firstAttribute="width" secondItem="bGl-bW-ejs" secondAttribute="width" id="sN3-sl-zUL"/>
-                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="rYu-6e-BdX" secondAttribute="trailing" constant="16" id="tdh-5a-wMY"/>
-                            <constraint firstItem="rYu-6e-BdX" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="tsv-kx-zrZ"/>
-                            <constraint firstItem="2xK-C4-ntI" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="uv2-sV-aU8"/>
-                            <constraint firstItem="bGl-bW-ejs" firstAttribute="top" secondItem="2xK-C4-ntI" secondAttribute="bottom" constant="10" id="yRM-7v-RJI"/>
+                            <constraint firstItem="7E6-1h-UQy" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="nKS-xv-7QL"/>
+                            <constraint firstItem="aZO-aH-XA5" firstAttribute="top" secondItem="2xK-C4-ntI" secondAttribute="bottom" constant="10" id="nwl-Pd-tkn"/>
+                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="2xK-C4-ntI" secondAttribute="trailing" constant="16" id="oJg-Hw-PAm"/>
+                            <constraint firstItem="aZO-aH-XA5" firstAttribute="height" secondItem="2xK-C4-ntI" secondAttribute="height" id="ooy-xB-lIq"/>
+                            <constraint firstItem="2xK-C4-ntI" firstAttribute="leading" secondItem="2Qn-l6-31h" secondAttribute="leading" constant="16" id="pva-GM-KTx"/>
+                            <constraint firstItem="OYT-Cj-U22" firstAttribute="top" secondItem="aZO-aH-XA5" secondAttribute="bottom" constant="10" id="qze-xc-nTn"/>
+                            <constraint firstItem="2xK-C4-ntI" firstAttribute="top" secondItem="bGl-bW-ejs" secondAttribute="bottom" constant="10" id="tJJ-SA-rYm"/>
+                            <constraint firstItem="2Qn-l6-31h" firstAttribute="trailing" secondItem="Snr-mv-vXQ" secondAttribute="trailing" constant="16" id="tbj-D3-ea3"/>
+                            <constraint firstItem="rYu-6e-BdX" firstAttribute="top" secondItem="K2A-Zm-dsg" secondAttribute="bottom" constant="20" id="uF6-xW-IHs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Qn-l6-31h"/>
                     </view>
                     <navigationItem key="navigationItem" title="THÔNG TIN CÁ NHÂN" id="dtj-Nx-fCz"/>
                     <connections>
                         <outlet property="address" destination="2xK-C4-ntI" id="scd-ft-T5p"/>
+                        <outlet property="map" destination="OYT-Cj-U22" id="tYR-np-5e1"/>
                         <outlet property="txt_flatName" destination="Snr-mv-vXQ" id="D4y-mt-RWc"/>
                         <outlet property="txt_flatNum" destination="bGl-bW-ejs" id="Wao-16-LHp"/>
                         <outlet property="txt_name" destination="K2A-Zm-dsg" id="cwc-9l-JVN"/>

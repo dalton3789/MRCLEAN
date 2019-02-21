@@ -9,50 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Book Services Location View Controller-->
-        <scene sceneID="a8q-Bp-Clq">
-            <objects>
-                <viewController storyboardIdentifier="BookServicesLocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eAz-bQ-whs" customClass="BookServicesLocationViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rHf-Bi-od4"/>
-                        <viewControllerLayoutGuide type="bottom" id="JjO-i6-6f8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tbc-gd-y8a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lPV-4y-ejn">
-                                <rect key="frame" x="0.0" y="30" width="375" height="296"/>
-                            </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knf-yr-8Zf">
-                                <rect key="frame" x="164.5" y="587" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="bwv-ao-x0j"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="getAddress:" destination="eAz-bQ-whs" eventType="touchUpInside" id="5oz-Lk-Qv8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="JjO-i6-6f8" firstAttribute="top" secondItem="knf-yr-8Zf" secondAttribute="bottom" constant="50" id="7pA-JY-4gT"/>
-                            <constraint firstItem="JjO-i6-6f8" firstAttribute="top" secondItem="lPV-4y-ejn" secondAttribute="bottom" constant="341" id="Bzp-Oe-OVv"/>
-                            <constraint firstItem="knf-yr-8Zf" firstAttribute="centerX" secondItem="tbc-gd-y8a" secondAttribute="centerX" id="TJD-Zc-KWt"/>
-                            <constraint firstItem="lPV-4y-ejn" firstAttribute="leading" secondItem="tbc-gd-y8a" secondAttribute="leading" id="im9-5e-Ydo"/>
-                            <constraint firstItem="lPV-4y-ejn" firstAttribute="top" secondItem="rHf-Bi-od4" secondAttribute="bottom" constant="10" id="oYB-2j-hmX"/>
-                            <constraint firstAttribute="trailing" secondItem="lPV-4y-ejn" secondAttribute="trailing" id="zno-34-u0R"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="map" destination="lPV-4y-ejn" id="A5L-Oz-woc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cPo-OJ-I1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1047.2" y="25.637181409295355"/>
-        </scene>
         <!--ngc_bookService-->
         <scene sceneID="WmJ-w2-p5s">
             <objects>
