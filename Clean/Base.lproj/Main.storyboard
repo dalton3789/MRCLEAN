@@ -38,8 +38,8 @@
                                     <constraint firstAttribute="height" constant="50" id="ssF-gw-TvQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="ABOUT US">
-                                    <color key="titleColor" red="0.1982868020304569" green="0.11341710751369671" blue="0.11466440671739125" alpha="0.79960402397260277" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="ĐẶT DỊCH VỤ">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -63,7 +63,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="CUSTOMERS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -194,6 +194,9 @@
                                 <state key="normal" title="Quay về">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.79960402397260277" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="5kx-26-tUv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF0-xT-aOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768.79999999999995" y="924.28785607196414"/>
+            <point key="canvasLocation" x="617" y="781"/>
         </scene>
         <!--Customer View Controller-->
         <scene sceneID="D3j-jB-UGw">
@@ -10769,6 +10772,6 @@ Cg
         <segue reference="T1I-Mv-rQd"/>
         <segue reference="Bhv-Le-85a"/>
         <segue reference="eZL-LB-kJT"/>
-        <segue reference="TbE-20-1Qo"/>
+        <segue reference="5kx-26-tUv"/>
     </inferredMetricsTieBreakers>
 </document>

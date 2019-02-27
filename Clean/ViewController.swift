@@ -35,11 +35,11 @@ class ViewController: UIViewController {
         btn_customer.layer.borderColor = hexStringToUIColor(hex: "#2d2d2d").cgColor
         btn_customer.layer.borderWidth = 2
         btn_customer.layer.cornerRadius = 15
-        btn_customer.backgroundColor = hexStringToUIColor(hex: "#2d2d2d")
-        btn_info.layer.borderColor = hexStringToUIColor(hex: "#2d2d2d").cgColor
+        btn_customer.backgroundColor = hexStringToUIColor(hex: "331E1A")
+        btn_info.layer.borderColor = hexStringToUIColor(hex: "#331E1A").cgColor
         btn_info.layer.borderWidth = 2
         btn_info.layer.cornerRadius = 15
-        btn_info.setTitleColor(hexStringToUIColor(hex: "#2d2d2d"), for: .normal)
+        btn_info.setTitleColor(hexStringToUIColor(hex: "#331E1A"), for: .normal)
 
     }
     

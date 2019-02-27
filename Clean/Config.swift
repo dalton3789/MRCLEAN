@@ -68,9 +68,31 @@ class ServiceRequest{
     var endTime = ""
     var note = ""
     var total = ""
+    var totalTime = ""
+    var totalWorker = ""
 }
 
 
+class GlobalValues {
+    
+    var user_address = "user_location"
+    var user_name = "user_name"
+    var user_phone = "user_phone"
+    var booking_date = "booking_date"
+    var booking_time = "booking_time"
+    var booking_totalCost = "booking_totalCost"
+    var booking_totalWorker = "booking_totalWorker"
+    var booking_note = "booking_note"
+   // var booking_totalCost = "booking_totalCost"
+}
+
+protocol PassData {
+    func passData(data : String)
+}
+
+protocol InitFunction {
+    func InitFunction()
+}
 
 
 

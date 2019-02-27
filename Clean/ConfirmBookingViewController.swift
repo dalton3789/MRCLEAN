@@ -35,7 +35,7 @@ class ConfirmBookingViewController: UIViewController {
     
     
     let sharedAction = SharedFunctions()
-    var order = Order()
+    var order =  ServiceRequest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,7 @@ class ConfirmBookingViewController: UIViewController {
         lbl_note.text = order.note
         lbl_dateTime.text = order.date
         lbl_totaltime.text = order.totalTime + " giờ"
-        lbl_totalCost.text = "TỔNG CỘNG : " + order.totalCost
+        lbl_totalCost.text = "TỔNG CỘNG : " + order.total
     }
 
 
