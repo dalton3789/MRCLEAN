@@ -76,7 +76,7 @@ class UserValidation{
         if (user.id != "" ){
         dataUser.DeleteAllUser()
         
-        dataUser.AddUser(user.name, user.address, user.id, user.isActive, user.isBlocked, user.supervisor_id, user.code)
+        dataUser.AddUser(user.name, user.address, user.id, user.isActive, user.isBlocked, user.supervisor_id, user.code, "")
         }
         
     }

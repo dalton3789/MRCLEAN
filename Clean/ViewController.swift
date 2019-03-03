@@ -70,8 +70,8 @@ class ViewController: UIViewController {
     func validateUser(){
         if (dataUser.CountUser() == 0){
            
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "ActivationViewController") as! ActivationViewController
-            self.present(newViewController, animated: true, completion: nil)
+            //let newViewController = storyBoard.instantiateViewController(withIdentifier: "ActivationViewController") as! ActivationViewController
+            //self.present(newViewController, animated: true, completion: nil)
 
         }
             //Check if customer is blocked
@@ -92,6 +92,16 @@ class ViewController: UIViewController {
     }
     
     
+    
+    @IBAction func checkRegisteredClient(_ sender: UIButton) {
+        let customer = dataUser.GetUser()
+        
+        if customer.count == 0{
+            performSegue(withIdentifier: "register_segue", sender: self)
+        }else{
+            performSegue(withIdentifier: "home_customer_segue", sender: self)
+        }
+    }
     
  }
 

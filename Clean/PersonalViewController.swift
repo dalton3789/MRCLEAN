@@ -32,10 +32,13 @@ class PersonalViewController: UIViewController {
         shareActions.roundBorder(control: btn_enter, width: 1, color: UIColor.white.cgColor, radius: 15)
         
         shareActions.roundBorder(control: btn_cancel, width: 1, color: hexStringToUIColor(hex: "331E1A").cgColor, radius: 15)
-        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboar)))
     }
     
-    
+    @objc func dismissKeyboar(){
+        txt_name.resignFirstResponder()
+        txt_phone.resignFirstResponder()
+    }
 
     
     @IBAction func enter(_ sender: UIButton) {

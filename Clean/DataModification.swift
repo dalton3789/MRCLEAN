@@ -17,7 +17,7 @@ class DataUser{
     var userArray :[User] = []
     var responseArray :[ResponseMMC] = []
     
-    public func AddUser(_ name: String, _ address: String, _ id:String, _ isActive: Bool, _ isBlocked : Bool, _ supervisor_id : String , _ code : String) {
+    public func AddUser(_ name: String, _ address: String, _ id:String, _ isActive: Bool, _ isBlocked : Bool, _ supervisor_id : String , _ code : String, _ phone : String) {
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "User", into: context)
         newUser.setValue(name, forKey: "name")
         newUser.setValue(address, forKey: "address")
@@ -26,6 +26,7 @@ class DataUser{
         newUser.setValue(isBlocked, forKey: "isBlocked")
         newUser.setValue(supervisor_id, forKey: "supervisor_id")
         newUser.setValue(code, forKey: "code")
+        newUser.setValue(phone, forKey: "phone")
         
         
         do {

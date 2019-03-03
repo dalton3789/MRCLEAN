@@ -21,6 +21,7 @@ public class Order {
     var note : String
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var bookingArray = [Booking]()
     
     public init() {
         name = ""
@@ -47,7 +48,7 @@ public class Order {
         
     }
     
-    public func AddUser(_ name: String, _ address: String, _ id:String, _ phone: String, _ date : String, _ totalTime : String , _ totalCost : String, _ note : String) {
+    public func AddBooking(_ name: String, _ address: String, _ id:String, _ phone: String, _ date : String, _ totalTime : String , _ totalCost : String, _ note : String) {
         let newBooking = NSEntityDescription.insertNewObject(forEntityName: "Booking", into: context)
         newBooking.setValue(name, forKey: "name")
         newBooking.setValue(address, forKey: "address")
@@ -65,6 +66,25 @@ public class Order {
         catch {
             print(error)
         }
+        
+    }
+    
+    public func DeleteAllBookings(){
+        do{
+            
+            try bookingArray = context.fetch(Booking.fetchRequest())
+            for booking in bookingArray as [NSManagedObject] {
+                
+                
+                context.delete(booking)
+                
+            }
+            try context.save()
+        }
+        catch{
+            print(error)
+        }
+        
         
     }
     

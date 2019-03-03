@@ -46,7 +46,9 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
         
         sharedAction.roundBorder(control: btn_ok, width: 1, color: UIColor.white.cgColor, radius: 20)
         sharedAction.roundBorder(control: viewTotal, width: 1, color: UIColor.clear.cgColor, radius: 20)
-        sharedAction.setBottomBorder(view: lbl_titleTotal)
+        sharedAction.setBottomBorder(view: lbl_titleTotal, lineColor : hexStringToUIColor(hex: "331E1A"))
+        
+       
         
     }
     
@@ -205,12 +207,15 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
              server.sendHTTPrequsetWithData(request_content, link)
              
              */
+            let order = Order()
+            let max = order.GetBookings().count
+            order.AddBooking(request.name, request.address, String(max + 1), request.phone, request.date, request.totalTime, request.total, request.note)
             
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_date)
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_note)
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_time)
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_totalWorker)
-             UserDefaults.standard.removeObject(forKey: globalVariables.booking_totalCost)
+            UserDefaults.standard.removeObject(forKey: globalVariables.booking_totalCost)
             performSegue(withIdentifier: "segue_confirmbooking", sender: self)
         }
         
