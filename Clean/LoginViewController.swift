@@ -48,5 +48,35 @@ class LoginViewController: UIViewController {
         txt_email.resignFirstResponder()
     }
 
+    @IBAction func sign_in(_ sender: UIButton) {
+        let result = validateText()
+        if !result.0 {
+            shareActions.showErrorToast(message: result.1, view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
+        }else {
+            
+        }
+    }
+    
+    func validateText() -> (Bool,String) {
+        let email = txt_email.text!
+        let pass = txt_login.text!
+        if email.isEmpty{
+            return (false, "Vui lòng nhập địa chỉ email")
+        }else {
+            let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+            let result = emailPredicate.evaluate(with: email)
+            if !result {
+                return (false, "Địa chỉ email không chính xác")
+            }
+        }
+        if pass.isEmpty{
+            return (false, "Vui lòng nhập password")
+        }
+        
+        return(true, "")
+    }
+    
+    
 
 }

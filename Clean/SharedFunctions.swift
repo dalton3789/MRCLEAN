@@ -96,5 +96,92 @@ public class SharedFunctions {
         
         return String(day) + "-" + String(month) + "-" + String(year)
     }
+    
+    func showToast(message : String, view: UIView) {
+        
+        let toastLabel = UILabel(frame: CGRect(x: 16, y: view.frame.size.height-100, width: view.frame.size.width - 32, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.font = UIFont(name: "Montserrat-Light", size: 12.0)
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        view.addSubview(toastLabel)
+        UIView.animate(withDuration: 5.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+    func showErrorToast(message : String, view: UIView) {
+        
+        let toastLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 45))
+        toastLabel.backgroundColor = UIColor.red.withAlphaComponent(0.9)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.font = UIFont(name: "Montserrat-Light", size: 15.0)
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 0;
+        toastLabel.clipsToBounds  =  true
+        view.addSubview(toastLabel)
+        UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseOut, animations: {
+            //toastLabel.alpha = 0.0
+            toastLabel.frame = CGRect(x: 0, y: 30, width:view.frame.size.width, height: 45)
+        }, completion: {(isCompleted) in
+            
+            UIView.animate(withDuration: 4.0, animations: {
+                toastLabel.alpha = 0.0
+            }, completion : {isCompleted in
+                toastLabel.removeFromSuperview()
+            })
+            
+        })
+    }
+    
+    func showErrorToast(message : String, view: UIView, startY : CGFloat, endY : CGFloat) {
+        
+        let toastLabel = UILabel(frame: CGRect(x: 0, y: startY, width: view.frame.size.width, height: 45))
+        toastLabel.backgroundColor = UIColor.red.withAlphaComponent(0.9)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.font = UIFont(name: "Montserrat-Light", size: 15.0)
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 0;
+        toastLabel.clipsToBounds  =  true
+        view.addSubview(toastLabel)
+        UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseOut, animations: {
+            //toastLabel.alpha = 0.0
+            toastLabel.frame = CGRect(x: 0, y: endY, width:view.frame.size.width, height: 45)
+        }, completion: {(isCompleted) in
+            
+            UIView.animate(withDuration: 4.0, animations: {
+                toastLabel.alpha = 0.0
+            }, completion : {isCompleted in
+                toastLabel.removeFromSuperview()
+            })
+            
+        })
+    }
+    
+    func showConfirmAlert(view : UIViewController, title : String , alert : String, confirmAction: @escaping () -> () ){
+        // create the alert
+        let alert = UIAlertController(title: title, message: alert, preferredStyle: UIAlertController.Style.actionSheet)
+        
+        // add an action (button)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: {
+            action in
+            confirmAction()
+        }))
+        
+        // show the alert
+        view.present(alert, animated: true, completion: nil)
+    }
+
  
 }

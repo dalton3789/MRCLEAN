@@ -7,6 +7,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="review" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalCost" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalTime" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -32,7 +33,7 @@
         <attribute name="supervisor_id" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Booking" positionX="-54" positionY="63" width="128" height="165"/>
+        <element name="Booking" positionX="-54" positionY="63" width="128" height="180"/>
         <element name="ResponseMMC" positionX="-54" positionY="18" width="128" height="165"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="180"/>
     </elements>

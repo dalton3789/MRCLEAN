@@ -12,16 +12,13 @@ class CustomerBookingTableViewController: UITableViewController {
 
     var bookings = [Booking]()
     let shareAction = SharedFunctions()
+    var order = Booking()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         bookings = Order().GetBookings()
 
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        bookings = Order().GetBookings()
     }
 
     // MARK: - Table view data source
@@ -40,14 +37,26 @@ class CustomerBookingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customerBooking_cell", for: indexPath) as! CustomerBookingTableViewCell
 
-        cell.setData(detail: bookings[indexPath.row].name!, date: bookings[indexPath.row].date!)
+        cell.setData(detail: bookings[indexPath.row].address!, date: bookings[indexPath.row].date!)
         shareAction.setBottomBorder(view: cell)
 
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        order = bookings[indexPath.row]
+        performSegue(withIdentifier: "reviewBooking_segue", sender: self)
+    }
+    
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        return self.view.frame.height / 12
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "reviewBooking_segue"{
+            let vc = segue.destination as! ReviewBookingViewController
+            vc.booking = order
+        }
     }
 }

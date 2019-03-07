@@ -22,6 +22,7 @@ public class Order {
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var bookingArray = [Booking]()
+    var booking = Booking()
     
     public init() {
         name = ""
@@ -48,7 +49,7 @@ public class Order {
         
     }
     
-    public func AddBooking(_ name: String, _ address: String, _ id:String, _ phone: String, _ date : String, _ totalTime : String , _ totalCost : String, _ note : String) {
+    public func AddBooking(_ name: String, _ address: String, _ id:String, _ phone: String, _ date : String, _ totalTime : String , _ totalCost : String, _ note : String, _ review : String) {
         let newBooking = NSEntityDescription.insertNewObject(forEntityName: "Booking", into: context)
         newBooking.setValue(name, forKey: "name")
         newBooking.setValue(address, forKey: "address")
@@ -58,6 +59,7 @@ public class Order {
         newBooking.setValue(totalTime, forKey: "totalTime")
         newBooking.setValue(totalCost, forKey: "totalCost")
         newBooking.setValue(note, forKey: "note")
+        newBooking.setValue(review, forKey: "review")
         
         
         do {
@@ -86,6 +88,16 @@ public class Order {
         }
         
         
+    }
+    
+    public func UpdateBooking(_ updatedBooking: Booking) {
+        self.booking = updatedBooking
+        do {
+            try context.save()
+        }
+        catch {
+            print(error)
+        }
     }
     
     

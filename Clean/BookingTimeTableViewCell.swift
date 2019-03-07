@@ -62,7 +62,7 @@ class BookingTimeTableViewCell: UITableViewCell {
         }
         
         if !numHour.isEmpty && !numWorker.isEmpty {
-            let totalCost = Int(numHour)! * 175000 * Int(numWorker)!
+            let totalCost = Int(numHour)! * 350000 * Int(numWorker)!
             let fmt = NumberFormatter()
             fmt.numberStyle = .decimal
             let total = fmt.string(from: NSNumber(value: totalCost))

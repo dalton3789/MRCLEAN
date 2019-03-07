@@ -192,9 +192,12 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
         let totalTime  = sharedAction.getSharedData(key: globalVariables.booking_time)
         let totalWorker = sharedAction.getSharedData(key: globalVariables.booking_totalWorker)
         let note = sharedAction.getSharedData(key: globalVariables.booking_note)
+        request.total = self.lbl_total.text!
         
-        if totalTime.isEmpty || totalWorker.isEmpty || request.address.isEmpty || request.date.isEmpty || request.name.isEmpty{
-            showAlert(view: self, title: "Lỗi", alert: "Vui lòng nhập đầy đủ thông tin")
+        if totalTime.isEmpty || totalWorker.isEmpty || request.address.isEmpty || request.date.isEmpty || request.name.isEmpty || request.total.isEmpty{
+            //showAlert(view: self, title: "Lỗi", alert: "Vui lòng nhập đầy đủ thông tin")
+            
+            sharedAction.showErrorToast(message: "Vui lòng nhập đầy đủ thông tin", view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
         }else {
             request.totalTime = totalTime
             request.totalWorker = totalWorker
@@ -209,7 +212,7 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
              */
             let order = Order()
             let max = order.GetBookings().count
-            order.AddBooking(request.name, request.address, String(max + 1), request.phone, request.date, request.totalTime, request.total, request.note)
+            order.AddBooking(request.name, request.address, String(max + 1), request.phone, request.date, request.totalTime, request.total, request.note, "")
             
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_date)
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_note)

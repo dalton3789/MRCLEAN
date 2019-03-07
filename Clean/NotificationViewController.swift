@@ -16,6 +16,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     
     let shareActions = SharedFunctions()
     var messages = [ResponseMMC]()
+    var messageDetail = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,23 +55,37 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         
     }
     
-    
-    
-    @IBAction func ClearAll(_ sender: UIBarButtonItem) {
-        
-        dataUser.DeleteAllResponse()
-        alertMain.message = "Lịch Sử Tin Nhắn Đã Được Xoá"
-        self.present(alertMain, animated: true, completion: nil)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.messageDetail = messages[indexPath.row].content!
+        performSegue(withIdentifier: "messageDetail_segue", sender: self)
         
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "messageDetail_segue"{
+            let vc = segue.destination as! MessageDetailViewController
+            vc.message = self.messageDetail
+        }
         if segue.identifier == "segue_sendMessage"{
             let vc = segue.destination as! SendMessageViewController
             vc.passDelegate = self
         }
     }
+    
+    @IBAction func ClearAll(_ sender: UIBarButtonItem) {
+        
+        shareActions.showConfirmAlert(view: self, title: "Xoá lịch sử", alert: "Xoá tất cả thông báo?", confirmAction: self.deleteAllChats)
+        
+    }
+    
+    func deleteAllChats(){
+        dataUser.DeleteAllResponse()
+        messages = dataUser.GetRepsonseMessage()
+        tableView.reloadData()
+    }
+    
+    
+  
     
     func passData(data: String) {
         messages = dataUser.GetRepsonseMessage()

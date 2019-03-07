@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MapKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBOutlet weak var txt_email: UITextField!
@@ -27,6 +28,12 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var img_back: UIImageView!
     
     let shareAction = SharedFunctions()
+    var activityIndicator = CustomIndicator()
+    
+    let managerDelegate = CLLocationManager()
+    var defaultLocation = CLLocation()
+    var location = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,9 +46,16 @@ class SignUpViewController: UIViewController {
         shareAction.setBottomBorder(view: txt_address)
         shareAction.setBottomBorder(view: txt_password)
         
+        managerDelegate.delegate = self
+        managerDelegate.desiredAccuracy = kCLLocationAccuracyBest
+        managerDelegate.requestWhenInUseAuthorization()
+        managerDelegate.startUpdatingLocation()
+        
         img_back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector( self.cancel)))
         img_back.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector( self.cancelKeyboard)))
+       
+        
     }
     
     
@@ -52,7 +66,29 @@ class SignUpViewController: UIViewController {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "userLocation_segue" {
+            let vc = segue.destination as! LocationViewController
+            
+            
+            let navBar = UINavigationBar(frame: CGRect(x: 0, y: 40, width: vc.view.frame.width, height: 44))
+            
+            
+            let navItem = UINavigationItem(title: "Địa Chỉ")
+            let doneItem =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(cancelLocationView))
+            
+           
+            navItem.leftBarButtonItem = doneItem
+            
+            navBar.setItems([navItem], animated: false)
+            
+            vc.view.addSubview(navBar);
+        }
+    }
     
+    @objc func cancelLocationView(){
+        print("A")
+    }
     
     @objc func cancelKeyboard(){
         txt_phone.resignFirstResponder()
@@ -112,7 +148,8 @@ class SignUpViewController: UIViewController {
         let result = validAllTextBox()
         
         if !result.0{
-            showAlert(view: self, title: "Lỗi", alert: result.1)
+            //showAlert(view: self, title: "Lỗi", alert: result.1)
+            shareAction.showErrorToast(message: result.1, view: self.view)
         }else {
             dataUser.DeleteAllUser()
             dataUser.AddUser(txt_name.text!, txt_address.text!, "1", true, false, "1", txt_password.text!, txt_phone.text!)
@@ -122,5 +159,55 @@ class SignUpViewController: UIViewController {
         
     }
     
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        activityIndicator.addIndicator(view: self, alpha: 1.0)
+        activityIndicator.startIndicator()
+        
+        defaultLocation = locations[0]
+     
+        getAdressName(coords: defaultLocation)
+        
+        activityIndicator.stopIndicator()
+        
+        
+    }
+    
+    func getAdressName(coords: CLLocation) {
+        let geo = CLGeocoder()
+        var address = ""
+        
+        geo.reverseGeocodeLocation(coords, completionHandler: {(placemark, error) -> Void in
+            if error != nil {
+                print("Failed")
+                return
+            }
+            if ((placemark?.count)!) > 0 {
+                let pm = placemark?[0] as! CLPlacemark!
+                
+                if pm?.subThoroughfare != nil {
+                    address += (pm?.subThoroughfare)! + " "
+                }
+                if pm?.thoroughfare != nil {
+                    address += (pm?.thoroughfare)! + " , "
+                }
+                if pm?.subLocality != nil {
+                    address += (pm?.subLocality)! + " , "
+                }
+                
+                if pm?.subAdministrativeArea != nil {
+                    address += (pm?.subAdministrativeArea)! + " , "
+                }
+                if pm?.administrativeArea != nil {
+                    address += (pm?.administrativeArea)!
+                }
+                
+                self.location = address
+                self.txt_address.text = address
+                
+            }
+        })
+    }
 
 }

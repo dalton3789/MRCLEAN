@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A0017BD1F14AAC200F4170E /* MasterServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0017BC1F14AAC200F4170E /* MasterServicesViewController.swift */; };
-		1A0017BF1F14AAF400F4170E /* BasicServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0017BE1F14AAF300F4170E /* BasicServiceViewController.swift */; };
 		1A0017C31F14B5C800F4170E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0017C21F14B5C800F4170E /* PageViewController.swift */; };
 		1A0017C51F14BCEA00F4170E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0017C41F14BCEA00F4170E /* WebViewController.swift */; };
 		1A0BD8B61F4D30330080E77F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD8B51F4D30330080E77F /* GoogleService-Info.plist */; };
@@ -47,6 +46,7 @@
 		A708A3E7221D11AF003DBF5C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E6221D11AF003DBF5C /* Order.swift */; };
 		A708A3E9221D390A003DBF5C /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3E8221D390A003DBF5C /* SharedFunctions.swift */; };
 		A708A3EB221D397C003DBF5C /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */; };
+		A7212F54222D220B00D03265 /* ReviewBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */; };
 		A722555522253DBB00B484AF /* BookingNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722555422253DBB00B484AF /* BookingNoteTableViewCell.swift */; };
 		A731388D221EA1E200F47C96 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731388C221EA1E200F47C96 /* CustomIndicator.swift */; };
 		A749C14B2226741A00745238 /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C1472226741A00745238 /* WeekdaysView.swift */; };
@@ -68,6 +68,7 @@
 		A7D6620E2221A74E00072C53 /* UserLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6620D2221A74E00072C53 /* UserLocationTableViewCell.swift */; };
 		A7FEA347222C1389002B88A5 /* CustomerBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */; };
 		A7FEA349222C17F5002B88A5 /* CustomerBookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEA348222C17F5002B88A5 /* CustomerBookingTableViewCell.swift */; };
+		A7FEA7CD222FB299000E90E3 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */; };
 		AE382FC1B896C35880B920F8 /* libPods-Clean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */; };
 		E82614A6209F50970010FE32 /* ReviewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82614A5209F50970010FE32 /* ReviewRequestViewController.swift */; };
 		E87755B6209EBDBC005305E2 /* BookHourServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87755B5209EBDBC005305E2 /* BookHourServiceViewController.swift */; };
@@ -75,7 +76,6 @@
 
 /* Begin PBXFileReference section */
 		1A0017BC1F14AAC200F4170E /* MasterServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterServicesViewController.swift; sourceTree = "<group>"; };
-		1A0017BE1F14AAF300F4170E /* BasicServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicServiceViewController.swift; sourceTree = "<group>"; };
 		1A0017C21F14B5C800F4170E /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		1A0017C41F14BCEA00F4170E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1A0BD8B51F4D30330080E77F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -118,6 +118,7 @@
 		A708A3E6221D11AF003DBF5C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A708A3E8221D390A003DBF5C /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
 		A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
+		A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBookingViewController.swift; sourceTree = "<group>"; };
 		A722555422253DBB00B484AF /* BookingNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingNoteTableViewCell.swift; sourceTree = "<group>"; };
 		A731388C221EA1E200F47C96 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		A749C1472226741A00745238 /* WeekdaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 		A7D6620D2221A74E00072C53 /* UserLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationTableViewCell.swift; sourceTree = "<group>"; };
 		A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBookingTableViewController.swift; sourceTree = "<group>"; };
 		A7FEA348222C17F5002B88A5 /* CustomerBookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBookingTableViewCell.swift; sourceTree = "<group>"; };
+		A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 		B626304FF9034A2B16602BC5 /* Pods-Clean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clean/Pods-Clean.release.xcconfig"; sourceTree = "<group>"; };
 		E82614A5209F50970010FE32 /* ReviewRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestViewController.swift; sourceTree = "<group>"; };
 		E87755B5209EBDBC005305E2 /* BookHourServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHourServiceViewController.swift; sourceTree = "<group>"; };
@@ -249,14 +251,7 @@
 				A7D6620C2221A73700072C53 /* TableCells */,
 				A708A3DF221CFA63003DBF5C /* BookServiceControllers */,
 				1AF520081F0BA27D005720E2 /* ViewController.swift */,
-				1A64775E1F1F18650002273F /* ChangeScheduleViewController.swift */,
-				1A0017BE1F14AAF300F4170E /* BasicServiceViewController.swift */,
-				1A8F512C1F0C7EB900103966 /* RequestViewController.swift */,
 				1A66795C1F0E3C32002BF0E0 /* LoadGif.swift */,
-				1A0F194E1F10934000A7C52C /* CustomerViewController.swift */,
-				1A0F19501F10C4F900A7C52C /* SchedulleViewController.swift */,
-				1A0E844E1F19C6BF00B8A34C /* ExtendContractViewController.swift */,
-				1A2BD8301F35B42D008AE9B0 /* MessageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +281,12 @@
 		A776115622291D3800DB4CD2 /* delete */ = {
 			isa = PBXGroup;
 			children = (
+				1A64775E1F1F18650002273F /* ChangeScheduleViewController.swift */,
+				1A2BD8301F35B42D008AE9B0 /* MessageViewController.swift */,
+				1A0E844E1F19C6BF00B8A34C /* ExtendContractViewController.swift */,
+				1A0F19501F10C4F900A7C52C /* SchedulleViewController.swift */,
+				1A8F512C1F0C7EB900103966 /* RequestViewController.swift */,
+				1A0F194E1F10934000A7C52C /* CustomerViewController.swift */,
 				1A8F512A1F0C7BC800103966 /* ActivationViewController.swift */,
 				1A6679601F0E40B7002BF0E0 /* OrderViewController.swift */,
 				E82614A5209F50970010FE32 /* ReviewRequestViewController.swift */,
@@ -310,6 +311,8 @@
 				A78916D5222986660083305A /* AccountViewController.swift */,
 				A78916D7222992A10083305A /* SendMessageViewController.swift */,
 				A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */,
+				A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */,
+				A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */,
 			);
 			name = Customers;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				A706EB8C2224F52F006D7A3A /* BookingTimeTableViewCell.swift in Sources */,
 				A749C14D2226741A00745238 /* MonthView.swift in Sources */,
 				E82614A6209F50970010FE32 /* ReviewRequestViewController.swift in Sources */,
+				A7212F54222D220B00D03265 /* ReviewBookingViewController.swift in Sources */,
 				1A0017C51F14BCEA00F4170E /* WebViewController.swift in Sources */,
 				1A0F19531F10C65900A7C52C /* ServerCominucation.swift in Sources */,
 				1A8F51301F0C7FE300103966 /* DataModification.swift in Sources */,
@@ -514,6 +518,7 @@
 				1A2BD8311F35B42D008AE9B0 /* MessageViewController.swift in Sources */,
 				E87755B6209EBDBC005305E2 /* BookHourServiceViewController.swift in Sources */,
 				1A0017C31F14B5C800F4170E /* PageViewController.swift in Sources */,
+				A7FEA7CD222FB299000E90E3 /* MessageDetailViewController.swift in Sources */,
 				1A8F512B1F0C7BC800103966 /* ActivationViewController.swift in Sources */,
 				1A0E844F1F19C6BF00B8A34C /* ExtendContractViewController.swift in Sources */,
 				1A13E2281F57CCE500142E13 /* FifthViewController.swift in Sources */,
@@ -535,7 +540,6 @@
 				A706EB8A2224E1DD006D7A3A /* PersonInfoTableViewCell.swift in Sources */,
 				1A9ED0C11F2C502600968AF3 /* Message.swift in Sources */,
 				A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */,
-				1A0017BF1F14AAF400F4170E /* BasicServiceViewController.swift in Sources */,
 				A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */,
 				1A64775F1F1F18650002273F /* ChangeScheduleViewController.swift in Sources */,
 			);
