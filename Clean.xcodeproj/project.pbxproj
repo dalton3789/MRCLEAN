@@ -60,6 +60,8 @@
 		A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779AEA622242B490022168B /* BookServiceViewController.swift */; };
 		A779AEA9222431780022168B /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779AEA8222431780022168B /* DateTableViewCell.swift */; };
 		A779AEAB222439EF0022168B /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779AEAA222439EF0022168B /* PersonalViewController.swift */; };
+		A77D0B022232BDE1003D644E /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */; };
+		A77D0B042232C652003D644E /* UpdateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D0B032232C652003D644E /* UpdateAccountViewController.swift */; };
 		A78916D6222986660083305A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78916D5222986660083305A /* AccountViewController.swift */; };
 		A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78916D7222992A10083305A /* SendMessageViewController.swift */; };
 		A7BA04C3221C25B100B14FFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA04C2221C25B100B14FFE /* CoreLocation.framework */; };
@@ -132,6 +134,8 @@
 		A779AEA622242B490022168B /* BookServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookServiceViewController.swift; sourceTree = "<group>"; };
 		A779AEA8222431780022168B /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
 		A779AEAA222439EF0022168B /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		A77D0B032232C652003D644E /* UpdateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAccountViewController.swift; sourceTree = "<group>"; };
 		A78916D5222986660083305A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		A78916D7222992A10083305A /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
 		A7BA04C2221C25B100B14FFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -313,6 +317,7 @@
 				A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */,
 				A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */,
 				A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */,
+				A77D0B032232C652003D644E /* UpdateAccountViewController.swift */,
 			);
 			name = Customers;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				A722555422253DBB00B484AF /* BookingNoteTableViewCell.swift */,
 				A776115E2229398600DB4CD2 /* NotificationTableViewCell.swift */,
 				A7FEA348222C17F5002B88A5 /* CustomerBookingTableViewCell.swift */,
+				A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -503,6 +509,7 @@
 				A7FEA349222C17F5002B88A5 /* CustomerBookingTableViewCell.swift in Sources */,
 				A779AEA9222431780022168B /* DateTableViewCell.swift in Sources */,
 				A706EB8C2224F52F006D7A3A /* BookingTimeTableViewCell.swift in Sources */,
+				A77D0B042232C652003D644E /* UpdateAccountViewController.swift in Sources */,
 				A749C14D2226741A00745238 /* MonthView.swift in Sources */,
 				E82614A6209F50970010FE32 /* ReviewRequestViewController.swift in Sources */,
 				A7212F54222D220B00D03265 /* ReviewBookingViewController.swift in Sources */,
@@ -540,6 +547,7 @@
 				A706EB8A2224E1DD006D7A3A /* PersonInfoTableViewCell.swift in Sources */,
 				1A9ED0C11F2C502600968AF3 /* Message.swift in Sources */,
 				A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */,
+				A77D0B022232BDE1003D644E /* AccountTableViewCell.swift in Sources */,
 				A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */,
 				1A64775F1F1F18650002273F /* ChangeScheduleViewController.swift in Sources */,
 			);

@@ -36,13 +36,16 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         return 80
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_notification") as! NotificationTableViewCell
         print(messages[indexPath.row].isReplied!)
         
         cell.setData(content: messages[indexPath.row].content!, time: messages[indexPath.row].time!, isMyMessage: (messages[indexPath.row].isReplied! == "1") ? true : false)
-        shareActions.setBottomBorder(view: cell)
         return cell
         
         /*

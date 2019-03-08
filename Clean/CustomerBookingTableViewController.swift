@@ -38,7 +38,6 @@ class CustomerBookingTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customerBooking_cell", for: indexPath) as! CustomerBookingTableViewCell
 
         cell.setData(detail: bookings[indexPath.row].address!, date: bookings[indexPath.row].date!)
-        shareAction.setBottomBorder(view: cell)
 
         return cell
     }
@@ -51,6 +50,10 @@ class CustomerBookingTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        return self.view.frame.height / 12
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -152,7 +152,7 @@ class SignUpViewController: UIViewController, CLLocationManagerDelegate {
             shareAction.showErrorToast(message: result.1, view: self.view)
         }else {
             dataUser.DeleteAllUser()
-            dataUser.AddUser(txt_name.text!, txt_address.text!, "1", true, false, "1", txt_password.text!, txt_phone.text!)
+            dataUser.AddUser(txt_name.text!, txt_address.text!, "1", true, false, "1", txt_password.text!, txt_phone.text!, txt_email.text!)
             performSegue(withIdentifier: "home_segue", sender: self)
         }
         
