@@ -68,12 +68,12 @@ class SendMessageViewController: UIViewController {
         
         dataUser.AddResponse(String(numRespones.count + 1), CFResponseFromMMC.customer_id, CFResponseFromMMC.topic_id, txt_message.text!, CFResponseFromMMC.title, "0", "1",shareAction.getCurrentDate() + " , " + shareAction.getCurrentTime())
         
-        //let data = ["id": "", "customer_id" : (dataUser.GetUser().first?.id)!, "topic_id" : CFMessageTopicID , "content" : txt_message.text, "title" : "MR&MRS CLEAN thực hiện dịch vụ"] as [String: Any]
+        let data = ["id": "", "customer_id" : (dataUser.GetUser().first?.id)!, "topic_id" : "" , "content" : txt_message.text!, "title" : "Tin nhan tu khach hang"] as [String: Any]
         
         
-       // let link = Config.destination + "/function/replyresponse.php"
+        let link = Config.destination + "/function/replyresponse.php"
         
-        //server.sendHTTPrequsetWithData(data, link)
+        server.sendHTTPrequsetWithData(data, link)
         
         passDelegate?.passData(data: "Done")
         

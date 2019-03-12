@@ -8,7 +8,9 @@
 
 import UIKit
 
-class AccountViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class AccountViewController: UIViewController, UITableViewDataSource,UITableViewDelegate, PassData {
+    
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -78,7 +80,14 @@ class AccountViewController: UIViewController, UITableViewDataSource,UITableView
         if segue.identifier == "updateAccount_segue" {
             let vc = segue.destination as! UpdateAccountViewController
             vc.user = self.user
+            vc.dataDelegate = self
         }
+    }
+    
+    func passData(data: String) {
+        user = dataUser.GetUser().first!
+        self.data = [["Họ và Tên " , "Địa chỉ", "Số điện thoại","Email"] ,[ user.name!, user.address!,  user.phone!,  user.email!] ]
+        tableView.reloadData()
     }
     
 }

@@ -1471,7 +1471,7 @@ Unable to find an academic position in Leningrad due to anti-Semitism (he was un
         <scene sceneID="jgU-jP-GQN">
             <objects>
                 <tableViewController storyboardIdentifier="CustomerBookingTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lFe-Nd-JuG" customClass="CustomerBookingTableViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Sxq-NK-UsG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Sxq-NK-UsG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1480,17 +1480,17 @@ Unable to find an academic position in Leningrad due to anti-Semitism (he was un
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vM7-1v-wWs" id="RCt-zK-FF5">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="81"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="80.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping-big_icon" translatesAutoresizingMaskIntoConstraints="NO" id="XHM-Lv-oL6">
-                                            <rect key="frame" x="16" y="16" width="48.5" height="49"/>
+                                            <rect key="frame" x="16" y="16" width="48.5" height="48.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="XHM-Lv-oL6" secondAttribute="height" multiplier="1:1" id="LoH-fh-Qn7"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alV-cm-yaB">
-                                            <rect key="frame" x="72.5" y="30" width="244.5" height="21.5"/>
+                                            <rect key="frame" x="72.5" y="29.5" width="244.5" height="21.5"/>
                                             <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -49749,7 +49749,7 @@ AAAAACt+ww
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qRR-bN-wsY"/>
-        <segue reference="g96-ka-y4y"/>
+        <segue reference="531-FT-egg"/>
         <segue reference="I6g-zY-I8X"/>
         <segue reference="lyj-s3-OeT"/>
     </inferredMetricsTieBreakers>

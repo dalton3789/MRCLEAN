@@ -15,6 +15,7 @@ class DataUser{
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var userArray :[User] = []
+    var user : User?
     var responseArray :[ResponseMMC] = []
     
     public func AddUser(_ name: String, _ address: String, _ id:String, _ isActive: Bool, _ isBlocked : Bool, _ supervisor_id : String , _ code : String, _ phone : String, _ email : String) {
@@ -51,6 +52,16 @@ class DataUser{
         
         return userArray
         
+    }
+    
+    public func UpdateUser(_ user: User) {
+        self.user = user
+        do {
+            try context.save()
+        }
+        catch {
+            print(error)
+        }
     }
     
     public func CountUser() -> Int{

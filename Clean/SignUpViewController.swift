@@ -153,6 +153,12 @@ class SignUpViewController: UIViewController, CLLocationManagerDelegate {
         }else {
             dataUser.DeleteAllUser()
             dataUser.AddUser(txt_name.text!, txt_address.text!, "1", true, false, "1", txt_password.text!, txt_phone.text!, txt_email.text!)
+            /*
+            let request_content = ["email": txt_email.text!, "name": txt_name.text!, "phone": txt_phone.text!, "address" : txt_address.text!, "code": txt_password.text!] as [String: Any]
+            let link = Config.destination + "/function/createcustomer.php"
+            
+            server.sendHTTPrequsetWithData(request_content, link)
+            */
             performSegue(withIdentifier: "home_segue", sender: self)
         }
         

@@ -27,8 +27,8 @@ var CFMessageTopicID = ""
 
 
 struct Config{
-    //static let destination = "http://192.168.1.58:8383/cleaning"
-   static let destination = "https://cleanhome.com.vn"
+    static let destination = "http://192.168.1.224/cleanm"
+   //static let destination = "https://cleanhome.com.vn"
     
     static var MessageId = ""
     

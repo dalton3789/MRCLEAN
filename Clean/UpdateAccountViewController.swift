@@ -29,6 +29,8 @@ class UpdateAccountViewController: UIViewController {
     
     @IBOutlet weak var btn_cancel: UIButton!
     
+    var dataDelegate : PassData?
+    
     let shareAction = SharedFunctions()
     var user = User()
     
@@ -51,15 +53,44 @@ class UpdateAccountViewController: UIViewController {
         txt_phone.text = user.phone!
         txt_email.text = user.email!
         txt_name.text = user.name!
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
  
     }
     
 
     @IBAction func update(_ sender: Any) {
+        /*
+        let request_content = ["email": txt_email.text!, "name": txt_name.text!, "phone": txt_phone.text!, "address" : txt_address.text!, "code": txt_password.text!] as [String: Any]
+        let link = Config.destination + "/function/createcustomer.php"
+        
+        server.sendHTTPrequsetWithData(request_content, link)
+        */
+        //let newUser = User()
+        user.address = txt_address.text!
+        user.code = txt_password.text!
+        user.email = txt_email.text!
+        user.phone = txt_phone.text!
+        user.name = txt_name.text!
+        
+        //dataUser.user = user
+        
+        dataUser.UpdateUser(user)
+        dataDelegate?.passData(data: "Done")
+        
+        dismiss(animated: true, completion: {})
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: {})
+    }
+    
+    func dismissKeyboard(){
+        txt_phone.resignFirstResponder()
+        txt_password.resignFirstResponder()
+        txt_address.resignFirstResponder()
+        txt_email.resignFirstResponder()
+        txt_name.resignFirstResponder()
     }
     
 }
