@@ -214,6 +214,7 @@
                         <outlet property="btn_signup" destination="8Wt-tX-u0x" id="Vvh-oT-1Ae"/>
                         <outlet property="txt_email" destination="Oi5-mX-3Gi" id="1Xa-2O-XW4"/>
                         <outlet property="txt_login" destination="iNq-yV-pPY" id="0Bf-ha-mzo"/>
+                        <segue destination="BeN-6C-34A" kind="show" identifier="customerLogined_segue" id="fEr-hU-1Zf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awD-lc-D8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1351,7 +1352,7 @@ Unable to find an academic position in Leningrad due to anti-Semitism (he was un
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="80h-Kj-8DL">
-                                        <rect key="frame" x="16" y="178" width="343" height="47"/>
+                                        <rect key="frame" x="16" y="121.5" width="343" height="46.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1362,14 +1363,8 @@ Unable to find an academic position in Leningrad due to anti-Semitism (he was un
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Clb-s7-agE">
-                                        <rect key="frame" x="16" y="121.5" width="343" height="46.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hP1-wI-mgf">
-                                        <rect key="frame" x="16" y="235" width="343" height="46.5"/>
+                                        <rect key="frame" x="16" y="178" width="343" height="47"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1401,29 +1396,25 @@ Unable to find an academic position in Leningrad due to anti-Semitism (he was un
                                     <constraint firstItem="80h-Kj-8DL" firstAttribute="height" secondItem="i3U-Ca-Dce" secondAttribute="height" id="1eA-Qt-WKa"/>
                                     <constraint firstItem="hP1-wI-mgf" firstAttribute="height" secondItem="i3U-Ca-Dce" secondAttribute="height" id="9qv-dK-QX7"/>
                                     <constraint firstAttribute="trailing" secondItem="i3U-Ca-Dce" secondAttribute="trailing" constant="16" id="Cda-dX-51I"/>
-                                    <constraint firstItem="80h-Kj-8DL" firstAttribute="top" secondItem="Clb-s7-agE" secondAttribute="bottom" constant="10" id="Duv-Dt-zuM"/>
                                     <constraint firstItem="rD7-Hl-9No" firstAttribute="top" secondItem="KXE-nc-uzf" secondAttribute="bottom" constant="10" id="HMP-5z-2Q4"/>
                                     <constraint firstAttribute="trailing" secondItem="KXE-nc-uzf" secondAttribute="trailing" constant="16" id="JN4-Bk-1pk"/>
                                     <constraint firstItem="nKV-ps-7ZV" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="K4P-GO-D5Z"/>
                                     <constraint firstItem="i3U-Ca-Dce" firstAttribute="top" secondItem="cl7-TN-7Wr" secondAttribute="top" constant="8" id="LO1-GF-cRw"/>
                                     <constraint firstItem="hP1-wI-mgf" firstAttribute="top" secondItem="80h-Kj-8DL" secondAttribute="bottom" constant="10" id="Lhl-zd-QoN"/>
-                                    <constraint firstItem="Clb-s7-agE" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="Nnd-pP-olI"/>
                                     <constraint firstAttribute="trailing" secondItem="nKV-ps-7ZV" secondAttribute="trailing" constant="16" id="OuY-31-13o"/>
                                     <constraint firstAttribute="bottom" secondItem="rD7-Hl-9No" secondAttribute="bottom" constant="16" id="WM6-Mt-xB8"/>
                                     <constraint firstItem="nKV-ps-7ZV" firstAttribute="height" secondItem="i3U-Ca-Dce" secondAttribute="height" id="Xvl-Ma-OyL"/>
                                     <constraint firstAttribute="trailing" secondItem="rD7-Hl-9No" secondAttribute="trailing" constant="16" id="YQk-Tw-vPB"/>
-                                    <constraint firstItem="Clb-s7-agE" firstAttribute="height" secondItem="i3U-Ca-Dce" secondAttribute="height" id="aS0-wG-E7q"/>
                                     <constraint firstAttribute="trailing" secondItem="80h-Kj-8DL" secondAttribute="trailing" constant="16" id="bPW-Rd-FHc"/>
                                     <constraint firstItem="nKV-ps-7ZV" firstAttribute="top" secondItem="i3U-Ca-Dce" secondAttribute="bottom" constant="10" id="cjs-7R-aOw"/>
                                     <constraint firstAttribute="trailing" secondItem="hP1-wI-mgf" secondAttribute="trailing" constant="16" id="cyN-bj-xDX"/>
-                                    <constraint firstItem="Clb-s7-agE" firstAttribute="top" secondItem="nKV-ps-7ZV" secondAttribute="bottom" constant="10" id="eLX-3c-a02"/>
                                     <constraint firstItem="80h-Kj-8DL" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="f9b-Pu-d0i"/>
                                     <constraint firstItem="KXE-nc-uzf" firstAttribute="height" secondItem="i3U-Ca-Dce" secondAttribute="height" id="llT-37-Eb2"/>
                                     <constraint firstItem="rD7-Hl-9No" firstAttribute="height" secondItem="i3U-Ca-Dce" secondAttribute="height" id="mUT-xG-3eH"/>
                                     <constraint firstItem="i3U-Ca-Dce" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="n0m-9Q-l2P"/>
-                                    <constraint firstAttribute="trailing" secondItem="Clb-s7-agE" secondAttribute="trailing" constant="16" id="pO2-GS-N3R"/>
                                     <constraint firstItem="hP1-wI-mgf" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="pcb-Ou-qed"/>
                                     <constraint firstItem="rD7-Hl-9No" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="vQv-38-Fur"/>
+                                    <constraint firstItem="80h-Kj-8DL" firstAttribute="top" secondItem="nKV-ps-7ZV" secondAttribute="bottom" constant="10" id="wNE-fU-dRj"/>
                                     <constraint firstItem="KXE-nc-uzf" firstAttribute="leading" secondItem="cl7-TN-7Wr" secondAttribute="leading" constant="16" id="ykf-FY-j3A"/>
                                 </constraints>
                             </view>
@@ -1457,7 +1448,6 @@ Unable to find an academic position in Leningrad due to anti-Semitism (he was un
                         <outlet property="btn_cancel" destination="rD7-Hl-9No" id="CbG-D9-QeU"/>
                         <outlet property="btn_update" destination="KXE-nc-uzf" id="jMa-qd-SB8"/>
                         <outlet property="txt_address" destination="nKV-ps-7ZV" id="NKH-Ua-CH0"/>
-                        <outlet property="txt_email" destination="Clb-s7-agE" id="3FK-dZ-VYh"/>
                         <outlet property="txt_name" destination="i3U-Ca-Dce" id="4yf-lb-jNV"/>
                         <outlet property="txt_password" destination="hP1-wI-mgf" id="FcT-CF-uaO"/>
                         <outlet property="txt_phone" destination="80h-Kj-8DL" id="RPF-7n-at5"/>
@@ -49748,7 +49738,7 @@ AAAAACt+ww
         <image name="unselected_star" width="72" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qRR-bN-wsY"/>
+        <segue reference="fEr-hU-1Zf"/>
         <segue reference="531-FT-egg"/>
         <segue reference="I6g-zY-I8X"/>
         <segue reference="lyj-s3-OeT"/>

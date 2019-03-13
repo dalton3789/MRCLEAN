@@ -37,7 +37,7 @@ class CustomerBookingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customerBooking_cell", for: indexPath) as! CustomerBookingTableViewCell
 
-        cell.setData(detail: bookings[indexPath.row].address!, date: bookings[indexPath.row].date!)
+        cell.setData(detail: "Ngày đặt dịch vụ : " + bookings[indexPath.row].date! , date: bookings[indexPath.row].name!)
 
         return cell
     }

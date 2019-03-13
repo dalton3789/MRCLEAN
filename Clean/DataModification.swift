@@ -18,7 +18,7 @@ class DataUser{
     var user : User?
     var responseArray :[ResponseMMC] = []
     
-    public func AddUser(_ name: String, _ address: String, _ id:String, _ isActive: Bool, _ isBlocked : Bool, _ supervisor_id : String , _ code : String, _ phone : String, _ email : String) {
+    public func AddUser(_ name: String, _ address: String, _ id:String, _ isActive: Bool, _ isBlocked : Bool, _ supervisor_id : String , _ code : String, _ phone : String, _ email : String, _ token : String) {
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "User", into: context)
         newUser.setValue(name, forKey: "name")
         newUser.setValue(address, forKey: "address")
@@ -29,6 +29,7 @@ class DataUser{
         newUser.setValue(code, forKey: "code")
         newUser.setValue(phone, forKey: "phone")
         newUser.setValue(email, forKey: "email")
+        newUser.setValue(token, forKey: "token")
         
         
         do {
@@ -191,7 +192,7 @@ class DataUser{
         
     }
 
-
+   
     
     
     

@@ -136,6 +136,13 @@ class ReviewBookingViewController: UIViewController, UITextViewDelegate {
         } else {
             booking.review = String(self.numofStar) + "|" + txt_note.text
             Order().UpdateBooking(booking)
+            
+            let request_content = ["review": booking.review!, "id":booking.id!] as [String: Any]
+            let link = Config.destination + "/function/updateorderrequest.php"
+            server.sendHTTPrequsetWithData(request_content, link)
+            
+            shareActions.showToast(message: "Gửi Thành Công", view: self.view)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     

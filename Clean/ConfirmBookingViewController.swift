@@ -33,7 +33,7 @@ class ConfirmBookingViewController: UIViewController {
     
     
     
-    
+    let cIndicator = CustomIndicator()
     let sharedAction = SharedFunctions()
     var order =  ServiceRequest()
     
@@ -45,7 +45,40 @@ class ConfirmBookingViewController: UIViewController {
         sharedAction.setBottomBorder(view: lbl_heading2)
         sharedAction.setBottomBorder(view: lbl_totalCost)
         
-        displayBooking()
+        cIndicator.addIndicator(view: self, alpha: 1)
+        cIndicator.startIndicator()
+        sleep(1)
+        getBookingData()
+        
+    }
+    
+    func getBookingData(){
+        let link = Config.destination + "/function/getlatestrequestorder.php?name=" + order.name + "&phone=" + order.phone
+        
+        let result = server.sendHTTPrequsetWitouthData(link)
+        
+        do{
+            let parsedData = try JSONSerialization.jsonObject(with: result.data(using: .utf8)!, options: []) as? [String:AnyObject]
+            
+            if let Data = parsedData?["response"] as? [[String : AnyObject]] {
+                let orderAction = Order()
+                for event in Data {
+                    
+                    let name = event["name"] as! String
+                    let address = event["address"] as! String
+                    let id = event["id"] as! String
+                    
+                    
+                    orderAction.AddBooking(name, address, id, order.phone, order.date, order.totalTime, order.total, order.note, "")
+                }
+                
+                
+                displayBooking()
+                self.cIndicator.stopIndicator()
+            }
+        } catch{
+            print(error)
+        }
     }
     
     func displayBooking(){
@@ -56,6 +89,8 @@ class ConfirmBookingViewController: UIViewController {
         lbl_dateTime.text = order.date
         lbl_totaltime.text = order.totalTime + " giờ"
         lbl_totalCost.text = "TỔNG CỘNG : " + order.total
+        
+       
     }
 
 

@@ -44,8 +44,12 @@ class Server {
     }
     
     func sendHTTPrequsetWitouthData(_ link: String) -> String {
-        let url = NSURL(string: link)!
-        let request = URLRequest(url: url as URL,cachePolicy: .reloadIgnoringLocalCacheData)
+        var url : URL?
+        if let encoded = link.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+        {
+           url = URL(string: encoded)
+        }
+        let request = URLRequest(url: url! ,cachePolicy: .reloadIgnoringLocalCacheData)
         
         
         let urlconfig = URLSessionConfiguration.default

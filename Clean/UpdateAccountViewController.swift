@@ -17,8 +17,6 @@ class UpdateAccountViewController: UIViewController {
     @IBOutlet weak var txt_address: UITextField!
     
     
-    @IBOutlet weak var txt_email: UITextField!
-    
     @IBOutlet weak var txt_phone: UITextField!
     
     
@@ -40,7 +38,6 @@ class UpdateAccountViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         shareAction.setBottomBorder(view: txt_name)
-        shareAction.setBottomBorder(view: txt_email)
         shareAction.setBottomBorder(view: txt_phone)
         shareAction.setBottomBorder(view: txt_address)
         shareAction.setBottomBorder(view: txt_password)
@@ -51,7 +48,6 @@ class UpdateAccountViewController: UIViewController {
         txt_password.text = user.code!
         txt_address.text = user.address!
         txt_phone.text = user.phone!
-        txt_email.text = user.email!
         txt_name.text = user.name!
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
@@ -60,16 +56,15 @@ class UpdateAccountViewController: UIViewController {
     
 
     @IBAction func update(_ sender: Any) {
-        /*
-        let request_content = ["email": txt_email.text!, "name": txt_name.text!, "phone": txt_phone.text!, "address" : txt_address.text!, "code": txt_password.text!] as [String: Any]
-        let link = Config.destination + "/function/createcustomer.php"
+        
+        let request_content = ["id": user.id!, "name": txt_name.text!, "phone": txt_phone.text!, "address" : txt_address.text!, "password": txt_password.text!] as [String: Any]
+        let link = Config.destination + "/function/updateuser_ios.php"
         
         server.sendHTTPrequsetWithData(request_content, link)
-        */
+        
         //let newUser = User()
         user.address = txt_address.text!
         user.code = txt_password.text!
-        user.email = txt_email.text!
         user.phone = txt_phone.text!
         user.name = txt_name.text!
         
@@ -89,7 +84,6 @@ class UpdateAccountViewController: UIViewController {
         txt_phone.resignFirstResponder()
         txt_password.resignFirstResponder()
         txt_address.resignFirstResponder()
-        txt_email.resignFirstResponder()
         txt_name.resignFirstResponder()
     }
     

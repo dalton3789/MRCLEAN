@@ -20,10 +20,20 @@ class AccountViewController: UIViewController, UITableViewDataSource,UITableView
     let titles = ["Họ và Tên", "Địa chỉ", "Số điện thoại", "Email"]
     var icons = [UIImage]()
     var user = User()
+    let cIndicator = CustomIndicator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cIndicator.addIndicator(view: self, alpha: 1)
+        cIndicator.startIndicator()
+
         user = dataUser.GetUser().first!
+        
+        let link3 = Config.destination + "/function/login_ios.php?email=" + user.email! + "&password=" + user.code!
+        let result = server.sendHTTPrequsetWitouthData(link3)
+        
+        getUserDataJSON(result: result)
+        
         data = [["Họ và Tên " , "Địa chỉ", "Số điện thoại","Email"] ,[ user.name!, user.address!,  user.phone!,  user.email!] ]
 
         tableView.delegate = self
@@ -85,9 +95,46 @@ class AccountViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func passData(data: String) {
+        cIndicator.startIndicator()
+        
         user = dataUser.GetUser().first!
+        
+        let link3 = Config.destination + "/function/login_ios.php?email=" + user.email! + "&password=" + user.code!
+        let result = server.sendHTTPrequsetWitouthData(link3)
+        
+        getUserDataJSON(result: result)
         self.data = [["Họ và Tên " , "Địa chỉ", "Số điện thoại","Email"] ,[ user.name!, user.address!,  user.phone!,  user.email!] ]
         tableView.reloadData()
+    }
+    
+    
+    func getUserDataJSON(result : String){
+        do{
+            let parsedData = try JSONSerialization.jsonObject(with: result.data(using: .utf8)!, options: []) as? [String:AnyObject]
+            
+            if let Data = parsedData?["customers"] as? [[String : AnyObject]] {
+                dataUser.DeleteAllUser()
+                for event in Data {
+                    
+                    let name = event["name"] as! String
+                    let address = event["address"] as! String
+                    let id = event["id"] as! String
+                    let password = event["password"] as! String
+                    let phone = event["phone"] as! String
+                    let email = event["email"] as! String
+                    
+                    
+                    dataUser.AddUser(name, address, id, true, false, "", password, phone, email, CFtoken)
+                }
+                
+                self.user = dataUser.GetUser().first!
+                self.tableView.reloadData()
+                self.cIndicator.stopIndicator()
+                
+            }
+        } catch{
+            print(error)
+        }
     }
     
 }

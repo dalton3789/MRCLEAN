@@ -53,7 +53,30 @@ class LoginViewController: UIViewController {
         if !result.0 {
             shareActions.showErrorToast(message: result.1, view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
         }else {
+            let link = Config.destination + "/function/login_ios.php?email=" + txt_email.text! + "&password=" + txt_login.text!
             
+            let result = server.sendHTTPrequsetWitouthData(link)
+            do{
+                let parsedData = try JSONSerialization.jsonObject(with: result.data(using: .utf8)!, options: []) as? [String:AnyObject]
+                
+                if let Data = parsedData?["customers"] as? [[String : AnyObject]] {
+                    
+                    for event in Data {
+                        
+                        let name = event["name"] as! String
+                        let address = event["address"] as! String
+                        let id = event["id"] as! String
+                        let password = event["password"] as! String
+                        let phone = event["phone"] as! String
+                        let email = event["email"] as! String
+                        
+                        dataUser.AddUser(name, address, id, true, false, "", password, phone, email, CFtoken)
+                    }
+                    performSegue(withIdentifier: "customerLogined_segue", sender: self)
+                }
+            } catch{
+                shareActions.showErrorToast(message: "Đăng nhập không thành công", view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
+            }
         }
     }
     

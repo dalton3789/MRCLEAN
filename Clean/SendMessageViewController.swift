@@ -68,7 +68,7 @@ class SendMessageViewController: UIViewController {
         
         dataUser.AddResponse(String(numRespones.count + 1), CFResponseFromMMC.customer_id, CFResponseFromMMC.topic_id, txt_message.text!, CFResponseFromMMC.title, "0", "1",shareAction.getCurrentDate() + " , " + shareAction.getCurrentTime())
         
-        let data = ["id": "", "customer_id" : (dataUser.GetUser().first?.id)!, "topic_id" : "" , "content" : txt_message.text!, "title" : "Tin nhan tu khach hang"] as [String: Any]
+        let data = ["id": "", "customer_id" : (dataUser.GetUser().first?.id)!, "topic_id" : "" , "content" : txt_message.text!, "title" : "Tin nhan tu khach hang", "dToken" : CFtoken] as [String: Any]
         
         
         let link = Config.destination + "/function/replyresponse.php"

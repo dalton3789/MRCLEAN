@@ -73,7 +73,7 @@ class ActivationViewController: UIViewController {
        
         }
         else {
-            dataUser.AddUser(user.name, user.address, user.id, user.isActive, user.isBlocked, user.supervisor_id, user.code,"", "")
+            dataUser.AddUser(user.name, user.address, user.id, user.isActive, user.isBlocked, user.supervisor_id, user.code,"", "", "")
             
             //Update Device Token to Send Push Notification
             if (CFtoken != ""){

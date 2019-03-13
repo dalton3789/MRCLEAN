@@ -204,16 +204,11 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
             request.note = note
             
             
-             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "note" : request.note, "totalTime" : request.totalTime, "total" : request.total] as [String: Any]
+             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "note" : request.note, " " : request.totalTime, "total" : request.total] as [String: Any]
              let link = Config.destination + "/function/createRequestBook.php"
              
              server.sendHTTPrequsetWithData(request_content, link)
             
-           
-             
-            let order = Order()
-            let max = order.GetBookings().count
-            order.AddBooking(request.name, request.address, String(max + 1), request.phone, request.date, request.totalTime, request.total, request.note, "")
             
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_date)
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_note)

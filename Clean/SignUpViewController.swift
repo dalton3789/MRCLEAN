@@ -151,18 +151,29 @@ class SignUpViewController: UIViewController, CLLocationManagerDelegate {
             //showAlert(view: self, title: "Lỗi", alert: result.1)
             shareAction.showErrorToast(message: result.1, view: self.view)
         }else {
-            dataUser.DeleteAllUser()
-            dataUser.AddUser(txt_name.text!, txt_address.text!, "1", true, false, "1", txt_password.text!, txt_phone.text!, txt_email.text!)
-            /*
-            let request_content = ["email": txt_email.text!, "name": txt_name.text!, "phone": txt_phone.text!, "address" : txt_address.text!, "code": txt_password.text!] as [String: Any]
-            let link = Config.destination + "/function/createcustomer.php"
             
-            server.sendHTTPrequsetWithData(request_content, link)
-            */
-            performSegue(withIdentifier: "home_segue", sender: self)
+            let link = Config.destination + "/function/checkemailexist.php?email=" + txt_email.text!
+            
+            let result = server.sendHTTPrequsetWitouthData(link)
+            
+            if result.contains("Yes"){
+                shareAction.showErrorToast(message: "Địa chỉ email đã được đăng kí", view: view, startY: 40, endY: 95)
+            } else{
+                
+                let request_content = ["email": txt_email.text!, "name": txt_name.text!, "isBlock": "0", "role" : "customer", "cpassword": txt_password.text!, "token" : CFtoken, "cusername" : "thisisaniosaccount", "address" : txt_address.text!, "phone" : txt_phone.text!] as [String: Any]
+                let link2 = Config.destination + "/function/createuser.php"
+                server.sendHTTPrequsetWithData(request_content, link2)
+                
+                dataUser.DeleteAllUser()
+                dataUser.AddUser(txt_name.text!, txt_address.text!, "1", true, false, "", txt_password.text!, txt_phone.text!, txt_email.text!, CFtoken)
+              
+                
+                
+                
+                
+                performSegue(withIdentifier: "home_segue", sender: self)
+            }
         }
-        
-        
     }
     
     
@@ -215,5 +226,7 @@ class SignUpViewController: UIViewController, CLLocationManagerDelegate {
             }
         })
     }
+    
+    
 
 }
