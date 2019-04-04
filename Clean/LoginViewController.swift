@@ -52,6 +52,7 @@ class LoginViewController: UIViewController {
         let result = validateText()
         if !result.0 {
             shareActions.showErrorToast(message: result.1, view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
+ 
         }else {
             let link = Config.destination + "/function/login_ios.php?email=" + txt_email.text! + "&password=" + txt_login.text!
             

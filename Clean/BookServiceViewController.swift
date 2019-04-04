@@ -29,6 +29,7 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
     
     let request = ServiceRequest()
     
+    
     let titles = ["ĐỊA ĐIỂM", "NGÀY ĐẶT", "GIỜ ĐẶT", "THÔNG TIN LIÊN HỆ", "GHI CHÚ"]
     
     
@@ -47,7 +48,8 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
         sharedAction.roundBorder(control: btn_ok, width: 1, color: UIColor.white.cgColor, radius: 20)
         sharedAction.roundBorder(control: viewTotal, width: 1, color: UIColor.clear.cgColor, radius: 20)
         sharedAction.setBottomBorder(view: lbl_titleTotal, lineColor : hexStringToUIColor(hex: "331E1A"))
-        
+        //sharedAction.view = self.view
+        //sharedAction.allignKeyboard()
        
         
     }
@@ -55,7 +57,7 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: - Table view data source
     
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -133,7 +135,7 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
     
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return (indexPath.section < 4) ? (self.view.frame.height)/18 : 100
+        return (indexPath.section < 4) ? (self.view.frame.height)/16 : 100
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -204,7 +206,7 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
             request.note = note
             
             
-             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "note" : request.note, " " : request.totalTime, "total" : request.total] as [String: Any]
+            let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "endTime" : request.totalTime, "note" : request.note, " " : request.totalTime, "total" : request.total] as [String: Any]
              let link = Config.destination + "/function/createRequestBook.php"
              
              server.sendHTTPrequsetWithData(request_content, link)

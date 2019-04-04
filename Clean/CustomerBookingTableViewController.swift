@@ -49,7 +49,7 @@ class CustomerBookingTableViewController: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       return self.view.frame.height / 12
+       return self.view.frame.height / 8
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

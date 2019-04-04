@@ -24,16 +24,17 @@
 	<true/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to book services</string>
 	<key>Privacy - Camera Usage Description</key>
 	<string>$(Clean) camera use</string>
 	<key>Privacy - Photo Library Usage Description</key>
 	<string>$(Clean) photo use</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location is required to book services</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>fetch</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

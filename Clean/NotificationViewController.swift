@@ -17,6 +17,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     let shareActions = SharedFunctions()
     var messages = [ResponseMMC]()
     var messageDetail = ""
+    var customIndicator = CustomIndicator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,46 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         messages = dataUser.GetRepsonseMessage()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        customIndicator.mainView = self.view
+        customIndicator.addIndicator(view: self, alpha: 1)
+        customIndicator.startIndicator()
+        gatherMessage()
+    }
+    
+    func gatherMessage(){
+        let link = Config.destination + "/function/getresponseByToken.php?" + "token=" + CFtoken
+        
+        let result = server.sendHTTPrequsetWitouthData(link)
+        do{
+            dataUser.DeleteAllResponse()
+            let parsedData = try JSONSerialization.jsonObject(with: result.data(using: .utf8)!, options: []) as? [String:AnyObject]
+            
+            if let Data = parsedData?["responses"] as? [[String : AnyObject]] {
+                
+                for event in Data {
+                    
+                    let content = event["content"] as! String
+                    let topic_id = event["topic_id"] as! String
+                    let id = event["id"] as! String
+                    let customer_id = event["customer_id"] as! String
+                    let title = event["title"] as! String
+                    let time = event["time"] as! String
+                    let isRead = event["isRead"] as! String
+                    let isReplied = event["isReplied"] as! String
+                    
+                    dataUser.AddResponse(id, customer_id, topic_id, content, title, isRead, isReplied, time)
+                }
+                messages = dataUser.GetRepsonseMessage()
+                self.tableView.reloadData()
+            }
+            customIndicator.stopIndicator()
+        }catch{
+            shareActions.showErrorToast(message: "Vui lòng thử lại sau!", view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

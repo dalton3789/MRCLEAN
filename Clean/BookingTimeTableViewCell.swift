@@ -21,12 +21,18 @@ class BookingTimeTableViewCell: UITableViewCell {
     
     var numHour = ""
     var numWorker = ""
+    var currentPrice = 0
     
     var delegate : InitFunction?
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        let link = Config.destination + "/function/priceonlineservice.php"
+        let result = server.sendHTTPrequsetWitouthData(link)
+        self.currentPrice = Int(result)!
+        
         // Initialization code
         dataPicker.values = ["" ,"2", "3" , "4" , "5" ,"6" ,"7" ,"8"]
         dataPicker.selectAction = setTextAfterSelected
@@ -62,7 +68,7 @@ class BookingTimeTableViewCell: UITableViewCell {
         }
         
         if !numHour.isEmpty && !numWorker.isEmpty {
-            let totalCost = Int(numHour)! * 350000 * Int(numWorker)!
+            let totalCost = Int(numHour)! * self.currentPrice * Int(numWorker)!
             let fmt = NumberFormatter()
             fmt.numberStyle = .decimal
             let total = fmt.string(from: NSNumber(value: totalCost))

@@ -36,6 +36,8 @@ class NotificationTableViewCell: UITableViewCell {
         lbl_time.text = time
         if isMyMessage {
             img_sender.image = #imageLiteral(resourceName: "unknow_100")
+        }else {
+            img_sender.image = #imageLiteral(resourceName: "logo_circle")
         }
         /*
         else {

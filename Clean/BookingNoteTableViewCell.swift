@@ -13,6 +13,8 @@ class BookingNoteTableViewCell: UITableViewCell, UITextViewDelegate {
    
     @IBOutlet weak var txt_note: UITextView!
     
+    let shareAction = SharedFunctions()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,6 +25,9 @@ class BookingNoteTableViewCell: UITableViewCell, UITextViewDelegate {
         txt_note.text = "Chi tiết công việc"
         txt_note.textColor = UIColor.gray
         txt_note.delegate = self
+        
+        shareAction.view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        shareAction.allignKeyboard()
 
         // Configure the view for the selected state
     }

@@ -16,7 +16,7 @@ import FirebaseMessaging
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
-    
+    let shareAction = SharedFunctions()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if #available(iOS 10.0, *) {
@@ -81,6 +81,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
+        performSelector(inBackground: #selector(saveResponse(userInfo:)), with: userInfo)
+        
+    }
+    
+    
+
+    
+    
+    @objc func saveResponse(userInfo : [AnyHashable : Any]){
+        
+        let aps = userInfo["aps"] as! [AnyHashable : Any]
+        let alert = aps["alert"] as! [AnyHashable : Any]
+        let body = alert["body"] as! String
+        
+        
+         dataUser.AddResponse("", CFResponseFromMMC.customer_id, CFResponseFromMMC.topic_id, body, CFResponseFromMMC.title, "0", "1",shareAction.getCurrentDate() + " , " + shareAction.getCurrentTime())
     }
     lazy var persistentContainer: NSPersistentContainer = {
         /*
@@ -168,11 +184,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
         CFtoken = fcmToken
+        print("Refresh :" + CFtoken)
     }
     
     func application(application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         Messaging.messaging().apnsToken = deviceToken as Data
+        print("Register :" + CFtoken)
     }
 
     
@@ -195,8 +213,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     @available(iOS 10.0, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        // if you set a member variable in didReceiveRemoteNotification, you  will know if this is from closed or background
-        print("Handle push from background or closed\(response.notification.request.content.userInfo)")
+        print("Get notification")
+       
     }
     
     func showAlertAppDelegate(title: String,message : String,buttonTitle: String,window: UIWindow){
