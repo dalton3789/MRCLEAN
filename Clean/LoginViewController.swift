@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
         back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector( self.cancel)))
         back.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector( self.cancelKeyboard)))
+        shareActions.getFCMToken()
     }
     
    
@@ -72,6 +73,9 @@ class LoginViewController: UIViewController {
                         let email = event["email"] as! String
                         
                         dataUser.AddUser(name, address, id, true, false, "", password, phone, email, CFtoken)
+                        if !CFtoken.isEmpty{
+                            updateToken(id: id, token: CFtoken)
+                        }
                     }
                     performSegue(withIdentifier: "customerLogined_segue", sender: self)
                 }
@@ -99,6 +103,12 @@ class LoginViewController: UIViewController {
         }
         
         return(true, "")
+    }
+    
+    func updateToken(id : String, token : String){
+        let link = Config.destination + "/function/updateusertoken.php?id=" + id + "&token=" + token
+        
+        _ = server.sendHTTPrequsetWitouthData(link)
     }
     
     

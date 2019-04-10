@@ -47,6 +47,9 @@
 		A708A3EB221D397C003DBF5C /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */; };
 		A7212F54222D220B00D03265 /* ReviewBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */; };
 		A722555522253DBB00B484AF /* BookingNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722555422253DBB00B484AF /* BookingNoteTableViewCell.swift */; };
+		A72513AC2259FD7B00208479 /* HomeBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72513AB2259FD7B00208479 /* HomeBookingViewController.swift */; };
+		A72513AE225A02D400208479 /* DeepPostServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72513AD225A02D400208479 /* DeepPostServiceViewController.swift */; };
+		A72513B0225A34A500208479 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72513AF225A34A500208479 /* AreaTableViewCell.swift */; };
 		A731388D221EA1E200F47C96 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731388C221EA1E200F47C96 /* CustomIndicator.swift */; };
 		A749C14B2226741A00745238 /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C1472226741A00745238 /* WeekdaysView.swift */; };
 		A749C14C2226741A00745238 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C1482226741A00745238 /* CalenderView.swift */; };
@@ -148,6 +151,9 @@
 		A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
 		A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBookingViewController.swift; sourceTree = "<group>"; };
 		A722555422253DBB00B484AF /* BookingNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingNoteTableViewCell.swift; sourceTree = "<group>"; };
+		A72513AB2259FD7B00208479 /* HomeBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBookingViewController.swift; sourceTree = "<group>"; };
+		A72513AD225A02D400208479 /* DeepPostServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPostServiceViewController.swift; sourceTree = "<group>"; };
+		A72513AF225A34A500208479 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
 		A731388C221EA1E200F47C96 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		A749C1472226741A00745238 /* WeekdaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
 		A749C1482226741A00745238 /* CalenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
@@ -307,6 +313,8 @@
 				A779AEA622242B490022168B /* BookServiceViewController.swift */,
 				A779AEAA222439EF0022168B /* PersonalViewController.swift */,
 				A749C14E222676AD00745238 /* CalendarViewController.swift */,
+				A72513AB2259FD7B00208479 /* HomeBookingViewController.swift */,
+				A72513AD225A02D400208479 /* DeepPostServiceViewController.swift */,
 			);
 			name = BookServiceControllers;
 			sourceTree = "<group>";
@@ -372,6 +380,7 @@
 				A776115E2229398600DB4CD2 /* NotificationTableViewCell.swift */,
 				A7FEA348222C17F5002B88A5 /* CustomerBookingTableViewCell.swift */,
 				A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */,
+				A72513AF225A34A500208479 /* AreaTableViewCell.swift */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -575,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72513B0225A34A500208479 /* AreaTableViewCell.swift in Sources */,
 				A7FEA347222C1389002B88A5 /* CustomerBookingTableViewController.swift in Sources */,
 				A776115D2229397800DB4CD2 /* NotificationViewController.swift in Sources */,
 				A749C14F222676AD00745238 /* CalendarViewController.swift in Sources */,
@@ -602,6 +612,7 @@
 				A7761159222925F200DB4CD2 /* LoginViewController.swift in Sources */,
 				1A8F512D1F0C7EB900103966 /* RequestViewController.swift in Sources */,
 				1A0F19511F10C4F900A7C52C /* SchedulleViewController.swift in Sources */,
+				A72513AC2259FD7B00208479 /* HomeBookingViewController.swift in Sources */,
 				1A2BD8311F35B42D008AE9B0 /* MessageViewController.swift in Sources */,
 				E87755B6209EBDBC005305E2 /* BookHourServiceViewController.swift in Sources */,
 				1A0017C31F14B5C800F4170E /* PageViewController.swift in Sources */,
@@ -626,6 +637,7 @@
 				A708A3E3221D0522003DBF5C /* PickerDefinition.swift in Sources */,
 				A706EB8A2224E1DD006D7A3A /* PersonInfoTableViewCell.swift in Sources */,
 				1A9ED0C11F2C502600968AF3 /* Message.swift in Sources */,
+				A72513AE225A02D400208479 /* DeepPostServiceViewController.swift in Sources */,
 				A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */,
 				A77D0B022232BDE1003D644E /* AccountTableViewCell.swift in Sources */,
 				A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */,

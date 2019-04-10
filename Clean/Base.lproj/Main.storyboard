@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ngc_bookService-->
+        <!--ngc_bookServices-->
         <scene sceneID="WmJ-w2-p5s">
             <objects>
-                <viewControllerPlaceholder storyboardName="BookService" referencedIdentifier="ngc_bookService" id="IsR-M1-Sof" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="BookService" referencedIdentifier="ngc_bookServices" id="IsR-M1-Sof" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpF-h1-JpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="668" y="-669"/>
@@ -49738,7 +49738,7 @@ AAAAACt+ww
         <image name="unselected_star" width="72" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fEr-hU-1Zf"/>
+        <segue reference="ram-mg-HaY"/>
         <segue reference="g96-ka-y4y"/>
         <segue reference="I6g-zY-I8X"/>
         <segue reference="lyj-s3-OeT"/>

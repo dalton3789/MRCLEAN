@@ -31,6 +31,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     let globalVariables = GlobalValues()
     
+    var passDelegate : PassData?
+    
     var location = ""
     
     override func viewDidLoad() {
@@ -77,6 +79,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         
         UserDefaults.standard.set(location, forKey: globalVariables.user_address)
         navigationController?.popViewController(animated: true)
+        passDelegate?.passData(data: "Done")
     }
     
     

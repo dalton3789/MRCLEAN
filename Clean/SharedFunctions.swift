@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseMessaging
 
 public class SharedFunctions {
     
@@ -183,5 +185,12 @@ public class SharedFunctions {
         view.present(alert, animated: true, completion: nil)
     }
 
+    func getFCMToken(){
+        if CFtoken.isEmpty {
+        let fcmtoken =  Messaging.messaging().fcmToken
+        CFtoken = String( describing: fcmtoken ?? "" )
+        print(CFtoken)
+        } 
+    }
  
 }

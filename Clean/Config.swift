@@ -70,6 +70,7 @@ class ServiceRequest{
     var total = ""
     var totalTime = ""
     var totalWorker = ""
+    var area = ""
 }
 
 

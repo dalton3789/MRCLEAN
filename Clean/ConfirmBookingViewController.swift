@@ -46,9 +46,12 @@ class ConfirmBookingViewController: UIViewController {
         sharedAction.setBottomBorder(view: lbl_totalCost)
         
         cIndicator.addIndicator(view: self, alpha: 1)
-        cIndicator.startIndicator()
-        sleep(1)
-        getBookingData()
+        //cIndicator.startIndicator()
+        //sleep(1)
+       // getBookingData()
+        displayBooking()
+        let orderAction = Order()
+        orderAction.AddBooking(order.name, order.address, "", order.phone, order.date, order.totalTime, order.total, order.note, "")
         
     }
     
