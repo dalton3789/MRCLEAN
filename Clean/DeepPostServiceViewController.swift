@@ -180,7 +180,7 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "endTime" : request.totalTime, "note" : request.note + " - Diện tích : " + request.area + " - Loại : " + tittle, "total" : request.total] as [String: Any]
             let link = Config.destination + "/function/createRequestBook.php"
             
-            //server.sendHTTPrequsetWithData(request_content, link)
+            server.sendHTTPrequsetWithData(request_content, link)
             
             
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_date)

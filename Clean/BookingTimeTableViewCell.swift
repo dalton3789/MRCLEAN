@@ -38,7 +38,11 @@ class BookingTimeTableViewCell: UITableViewCell {
         dataPicker.selectAction = setTextAfterSelected
         picker.delegate = dataPicker
         picker.dataSource = dataPicker
-        txt_time.inputView = picker
+        
+        let timeViewPicker = UIPickerView()
+        timeViewPicker.delegate = dataPicker
+        timeViewPicker.dataSource = dataPicker
+        txt_time.inputView = timeViewPicker
         txt_totalWorker.inputView = picker
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
         

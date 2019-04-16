@@ -62,7 +62,7 @@ class SendMessageViewController: UIViewController {
     @IBAction func donw(_ sender: UIButton) {
         let numRespones = dataUser.GetRepsonseMessage()
         
-        dataUser.AddResponse(String(numRespones.count + 1), CFResponseFromMMC.customer_id, CFResponseFromMMC.topic_id, txt_message.text!, CFResponseFromMMC.title, "0", "1",shareAction.getCurrentDate() + " , " + shareAction.getCurrentTime())
+        dataUser.AddResponse(String(numRespones.count + 1), CFResponseFromMMC.customer_id, CFResponseFromMMC.topic_id, txt_message.text!, CFResponseFromMMC.title, "0", "0",shareAction.getCurrentDate() + " , " + shareAction.getCurrentTime())
         
         let data = ["id": "", "customer_id" : (dataUser.GetUser().first?.id)!, "topic_id" : "" , "content" : txt_message.text!, "title" : "Tin nhan tu khach hang", "dToken" : CFtoken] as [String: Any]
         

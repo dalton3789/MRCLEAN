@@ -25,14 +25,15 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         tableView.dataSource = self
         
         messages = dataUser.GetRepsonseMessage()
+        
+        customIndicator.mainView = self.view
+        customIndicator.addIndicator(view: self, alpha: 1)
+        customIndicator.startIndicator()
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        customIndicator.mainView = self.view
-        customIndicator.addIndicator(view: self, alpha: 1)
-        customIndicator.startIndicator()
         gatherMessage()
     }
     
@@ -86,16 +87,9 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_notification") as! NotificationTableViewCell
         print(messages[indexPath.row].isReplied!)
         
-        cell.setData(content: messages[indexPath.row].content!, time: messages[indexPath.row].time!, isMyMessage: (messages[indexPath.row].isReplied! == "1") ? true : false)
+        cell.setData(content: messages[indexPath.row].content!, time: messages[indexPath.row].time!, isMyMessage: (messages[indexPath.row].isReplied! == "0") ? true : false)
         return cell
-        
-        /*
-         if indexPath.row != 1{
-         cell.setData(content: "This is the message from MR&MRS CLEAN", time: "Today", isMyMessage: false)
-         }else {
-         cell.setData(content: "The message have been sent by user", time: "Yesterday", isMyMessage: false)
-         }
-         */
+
         
     }
     
