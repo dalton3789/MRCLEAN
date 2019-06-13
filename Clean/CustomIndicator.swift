@@ -23,7 +23,7 @@ public class CustomIndicator {
         
         indicator.center = mainView.center
         indicator.hidesWhenStopped = true
-        indicator.activityIndicatorViewStyle = .whiteLarge
+        indicator.style = .whiteLarge
         indicator.color = UIColor.gray
         
         mainView.addSubview(indicator)

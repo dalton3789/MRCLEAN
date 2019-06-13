@@ -104,7 +104,7 @@ func hexStringToUIColor (hex:String) -> UIColor {
         cString.remove(at: cString.startIndex)
     }
     
-    if ((cString.characters.count) != 6) {
+    if ((cString.count) != 6) {
         return UIColor.gray
     }
     
@@ -122,7 +122,7 @@ func hexStringToUIColor (hex:String) -> UIColor {
 
 func Initialize(){
     isInit = 1
-    alertMain.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+    alertMain.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 
 }
 

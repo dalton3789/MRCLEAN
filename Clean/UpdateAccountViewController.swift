@@ -80,7 +80,7 @@ class UpdateAccountViewController: UIViewController {
         dismiss(animated: true, completion: {})
     }
     
-    func dismissKeyboard(){
+    @objc func dismissKeyboard(){
         txt_phone.resignFirstResponder()
         txt_password.resignFirstResponder()
         txt_address.resignFirstResponder()

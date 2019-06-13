@@ -48,14 +48,14 @@ class CalendarViewController: UIViewController {
        // calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
     }
     
-    func dissmissInput(){
+    @objc func dissmissInput(){
         self.dismiss(animated: true, completion: {})
     }
     
     func createDatePicker() {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem .done,  target: self, action: #selector(donePressed))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem .done,  target: self, action: #selector(donePressed))
         
         toolbar.setItems([doneButton], animated: false)
         
@@ -65,7 +65,7 @@ class CalendarViewController: UIViewController {
         
     }
   
-    func donePressed(){
+    @objc func donePressed(){
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
         let selectedDate = dateFormatter.string(from: datepicker.date)

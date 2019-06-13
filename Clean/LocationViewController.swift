@@ -90,7 +90,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         
         let myLocation = CLLocationCoordinate2D(latitude: defaultLocation.coordinate.latitude, longitude: defaultLocation.coordinate.longitude)
         
-        let region = MKCoordinateRegionMake(myLocation, span)
+        let region = MKCoordinateRegion(center: myLocation, span: span)
         map.setRegion(region, animated: true)
         map.showsUserLocation = true
         getAdressName(coords: defaultLocation)
@@ -109,7 +109,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                 return
             }
             if ((placemark?.count)!) > 0 {
-                let pm = placemark?[0] as! CLPlacemark!
+                let pm = placemark?[0] 
                 
                 if pm?.subThoroughfare != nil {
                     address += (pm?.subThoroughfare)! + " "
@@ -136,7 +136,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
 
 
-    func dissmissInput(){
+    @objc func dissmissInput(){
         txt_flatNum.resignFirstResponder()
         txt_flatName.resignFirstResponder()
         txt_location.resignFirstResponder()

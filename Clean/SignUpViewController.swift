@@ -75,7 +75,7 @@ class SignUpViewController: UIViewController, CLLocationManagerDelegate {
             
             
             let navItem = UINavigationItem(title: "Địa Chỉ")
-            let doneItem =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(cancelLocationView))
+            let doneItem =  UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(cancelLocationView))
             
            
             navItem.leftBarButtonItem = doneItem
@@ -201,7 +201,7 @@ class SignUpViewController: UIViewController, CLLocationManagerDelegate {
                 return
             }
             if ((placemark?.count)!) > 0 {
-                let pm = placemark?[0] as! CLPlacemark!
+                let pm = placemark?[0] 
                 
                 if pm?.subThoroughfare != nil {
                     address += (pm?.subThoroughfare)! + " "

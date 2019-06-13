@@ -12,7 +12,6 @@ import UIKit
 
 class DataUser{
     
-    
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var userArray :[User] = []
     var user : User?
@@ -43,8 +42,9 @@ class DataUser{
     
     
     public func GetUser() -> [User]{
+        
         do{
-            
+           
             try userArray = context.fetch(User.fetchRequest())
         }
         catch{
@@ -52,7 +52,7 @@ class DataUser{
         }
         
         return userArray
-        
+
     }
     
     public func UpdateUser(_ user: User) {
@@ -66,6 +66,7 @@ class DataUser{
     }
     
     public func CountUser() -> Int{
+        
         do{
             
             return try context.count(for: User.fetchRequest())
@@ -75,9 +76,11 @@ class DataUser{
         }
         
         return 0
+ 
     }
     
     public func DeleteUser(_ id: String){
+        
         do{
             
             try userArray = context.fetch(User.fetchRequest())
@@ -94,11 +97,12 @@ class DataUser{
         catch{
             print(error)
         }
-        
+ 
         
     }
     
     public func DeleteAllUser(){
+        
         do{
             
             try userArray = context.fetch(User.fetchRequest())
@@ -113,8 +117,7 @@ class DataUser{
         catch{
             print(error)
         }
-        
-        
+ 
     }
 
     
@@ -140,9 +143,10 @@ class DataUser{
     }
     
     public func GetRepsonseMessage() -> [ResponseMMC]{
+        
         do{
         
-        try responseArray = context.fetch(ResponseMMC.fetchRequest())
+            try responseArray = context.fetch(ResponseMMC.fetchRequest())
         
         
         return responseArray
@@ -154,9 +158,9 @@ class DataUser{
     }
     
     public func DeleteAllResponse(){
+        
         do{
-            
-            try responseArray = context.fetch(ResponseMMC.fetchRequest())
+            responseArray = try context.fetch(ResponseMMC.fetchRequest())
             for user in responseArray as [NSManagedObject] {
                 
                 
@@ -173,6 +177,7 @@ class DataUser{
     }
     
     public func DeleteResponse(_ id: String){
+        
         do{
             
             try responseArray = context.fetch(ResponseMMC.fetchRequest())

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                 <navigationController storyboardIdentifier="ngc_bookServices" id="xOn-ao-HDZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Đặt Dịch Vụ" image="Booking-small" id="601-b9-WCY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="tjV-l2-lTZ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.19978916645050049" green="0.1179371103644371" blue="0.10195425897836685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,23 +37,23 @@
             <objects>
                 <viewController storyboardIdentifier="HomeBookingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="npe-xM-GsZ" customClass="HomeBookingViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pEX-wj-uZ0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="lNe-El-o6r">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvI-GA-Ngx">
-                                <rect key="frame" x="0.0" y="516.5" width="375" height="150.5"/>
+                                <rect key="frame" x="0.0" y="668.66666666666663" width="414" height="193.33333333333337"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweep" translatesAutoresizingMaskIntoConstraints="NO" id="JE5-Xz-Zhc">
-                                        <rect key="frame" x="16" y="45" width="60.5" height="60.5"/>
+                                        <rect key="frame" x="16" y="57.999999999999993" width="77.333333333333329" height="77.333333333333314"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="JE5-Xz-Zhc" secondAttribute="height" multiplier="1:1" id="hel-JU-LYA"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch Vụ Theo Giờ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="f6r-8e-bTs">
-                                        <rect key="frame" x="96.5" y="61.5" width="262.5" height="27"/>
+                                        <rect key="frame" x="113.33333333333334" y="83.333333333333371" width="284.66666666666663" height="26.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -70,13 +70,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyA-Ch-iUb">
-                                <rect key="frame" x="0.0" y="365.5" width="375" height="151"/>
+                                <rect key="frame" x="0.0" y="475.00000000000006" width="414" height="193.66666666666669"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vacuum-cleaner" translatesAutoresizingMaskIntoConstraints="NO" id="nPs-Y9-TR0">
-                                        <rect key="frame" x="16" y="45" width="60.5" height="60.5"/>
+                                        <rect key="frame" x="16" y="57.999999999999993" width="77.333333333333329" height="77.333333333333314"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch Vụ Sau Xây Dựng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bhA-hB-9cR">
-                                        <rect key="frame" x="96.5" y="62" width="262.5" height="27"/>
+                                        <rect key="frame" x="113.33333333333334" y="83.333333333333371" width="284.66666666666663" height="26.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -92,13 +92,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4I-rG-5i1">
-                                <rect key="frame" x="0.0" y="215" width="375" height="150.5"/>
+                                <rect key="frame" x="0.0" y="281.66666666666669" width="414" height="193.33333333333331"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cleaning" translatesAutoresizingMaskIntoConstraints="NO" id="061-aD-Dwd">
-                                        <rect key="frame" x="16" y="45" width="60.5" height="60.5"/>
+                                        <rect key="frame" x="16" y="57.999999999999993" width="77.333333333333329" height="77.333333333333314"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch Vụ Chuyên Sâu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="STX-BX-xZx">
-                                        <rect key="frame" x="96.5" y="61.5" width="262.5" height="27"/>
+                                        <rect key="frame" x="113.33333333333334" y="83.333333333333314" width="284.66666666666663" height="26.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -164,18 +164,18 @@
             <objects>
                 <viewController storyboardIdentifier="BookServiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1b4-eU-OIr" customClass="BookServiceViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oHb-zE-DWb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ztz-cP-ZbL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="536.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="684"/>
                                 <color key="backgroundColor" red="0.60784313725490191" green="0.5607843137254902" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="location_cell" rowHeight="40" id="q7Z-pr-qnq" customClass="UserLocationTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q7Z-pr-qnq" id="dLc-WD-gL0">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="bZt-E5-KbL">
@@ -186,7 +186,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpr-ai-PHr">
-                                                    <rect key="frame" x="48" y="20" width="278" height="0.0"/>
+                                                    <rect key="frame" x="48" y="20" width="312" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -207,21 +207,21 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="date_cell" id="E1k-wt-R6o" customClass="DateTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="68" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="68" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E1k-wt-R6o" id="obw-Xe-IHy">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="f9v-MF-hrc">
-                                                    <rect key="frame" x="16" y="9" width="26.5" height="26"/>
+                                                    <rect key="frame" x="15.999999999999998" y="8.6666666666666661" width="26.333333333333329" height="26.666666666666671"/>
                                                     <color key="tintColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="f9v-MF-hrc" secondAttribute="height" multiplier="1:1" id="Ugv-U7-aYd"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhấn để nhâp ngày đặt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7f-Sb-R4Q">
-                                                    <rect key="frame" x="52.5" y="11.5" width="265.5" height="21.5"/>
+                                                    <rect key="frame" x="52.333333333333343" y="11.333333333333334" width="299.66666666666663" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -243,33 +243,33 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="time_cell" rowHeight="71" id="tea-qZ-prS" customClass="BookingTimeTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="112" width="375" height="71"/>
+                                        <rect key="frame" x="0.0" y="112" width="414" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tea-qZ-prS" id="2hS-D1-y7U">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số nhân viên" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xg-hO-0UZ">
-                                                    <rect key="frame" x="247.5" y="14" width="112.5" height="43"/>
+                                                    <rect key="frame" x="269.66666666666669" y="14.333333333333332" width="124.33333333333331" height="42.333333333333343"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số giờ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-Z1-FJW">
-                                                    <rect key="frame" x="67.5" y="14" width="112.5" height="43"/>
+                                                    <rect key="frame" x="72.666666666666686" y="14.333333333333332" width="124" height="42.333333333333343"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0IA-HG-0Tz">
-                                                    <rect key="frame" x="15" y="14" width="42.5" height="43"/>
+                                                    <rect key="frame" x="19.999999999999996" y="14.333333333333332" width="42.666666666666657" height="42.333333333333343"/>
                                                     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="0IA-HG-0Tz" secondAttribute="height" multiplier="1:1" id="qdN-ve-UnH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_icon" translatesAutoresizingMaskIntoConstraints="NO" id="WE1-id-dwc">
-                                                    <rect key="frame" x="195" y="14" width="42.5" height="43"/>
+                                                    <rect key="frame" x="217.33333333333334" y="14.333333333333332" width="42.333333333333343" height="42.333333333333343"/>
                                                     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="WE1-id-dwc" secondAttribute="height" multiplier="1:1" id="fRe-u4-hDi"/>
@@ -301,20 +301,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="people_cell" id="MKl-ER-lZs" customClass="PersonInfoTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="183" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="183" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MKl-ER-lZs" id="rEX-ZO-oh2">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ia3-t1-R1l">
-                                                    <rect key="frame" x="16" y="9" width="26.5" height="26"/>
+                                                    <rect key="frame" x="15.999999999999998" y="8.6666666666666661" width="26.333333333333329" height="26.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ia3-t1-R1l" secondAttribute="height" multiplier="1:1" id="92j-hu-WaI"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhấn để nhập thông tin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hl-QT-zEL">
-                                                    <rect key="frame" x="52.5" y="11.5" width="273.5" height="21.5"/>
+                                                    <rect key="frame" x="52.333333333333343" y="11.333333333333334" width="307.66666666666663" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -335,14 +335,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="note_cell" rowHeight="95" id="4RP-Ot-VVL" customClass="BookingNoteTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="227" width="375" height="95"/>
+                                        <rect key="frame" x="0.0" y="227" width="414" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4RP-Ot-VVL" id="0aH-lN-jX6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sXp-p3-HDT">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="95"/>
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="95"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -362,24 +362,24 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJm-iL-j9P">
-                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng cộng :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQo-Ld-TpK">
-                                        <rect key="frame" x="8" y="8" width="92" height="21.5"/>
+                                        <rect key="frame" x="8" y="8.0000000000000018" width="92" height="21.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-1n-2Nn">
-                                        <rect key="frame" x="16" y="39.5" width="214.5" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-1n-2Nn">
+                                        <rect key="frame" x="15.999999999999986" y="39.666666666666629" width="241.66666666666663" height="0.0"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="23"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.11764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYD-g7-B9Z">
-                                        <rect key="frame" x="246.5" y="6.5" width="112.5" height="53.5"/>
+                                        <rect key="frame" x="273.66666666666669" y="9" width="124.33333333333331" height="72"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="16"/>
                                         <state key="normal" title="Xác Nhận">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -399,13 +399,13 @@
                                     <constraint firstItem="mYD-g7-B9Z" firstAttribute="leading" secondItem="Uqh-1n-2Nn" secondAttribute="trailing" constant="16" id="mfJ-Bo-k2o"/>
                                     <constraint firstAttribute="trailing" secondItem="mYD-g7-B9Z" secondAttribute="trailing" constant="16" id="tC9-Xu-0eC"/>
                                     <constraint firstItem="mYD-g7-B9Z" firstAttribute="centerY" secondItem="ZJm-iL-j9P" secondAttribute="centerY" id="uBt-Rq-HTc"/>
+                                    <constraint firstAttribute="height" constant="90" id="wiv-b3-59Z"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hdz-Zf-saz" firstAttribute="trailing" secondItem="ZJm-iL-j9P" secondAttribute="trailing" id="0Nj-wf-hB4"/>
-                            <constraint firstItem="ZJm-iL-j9P" firstAttribute="height" secondItem="oHb-zE-DWb" secondAttribute="height" multiplier="0.1" id="Y0n-At-dgI"/>
                             <constraint firstItem="ZJm-iL-j9P" firstAttribute="top" secondItem="Ztz-cP-ZbL" secondAttribute="bottom" id="Yec-0T-FJm"/>
                             <constraint firstItem="Ztz-cP-ZbL" firstAttribute="leading" secondItem="hdz-Zf-saz" secondAttribute="leading" id="c8a-st-9qe"/>
                             <constraint firstItem="ZJm-iL-j9P" firstAttribute="leading" secondItem="oHb-zE-DWb" secondAttribute="leading" id="h2e-Qf-B8a"/>
@@ -434,14 +434,14 @@
             <objects>
                 <viewController storyboardIdentifier="LocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MTB-DQ-9wO" customClass="LocationViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LA0-MC-HQ3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A4m-Hh-BWk">
-                                <rect key="frame" x="0.0" y="64" width="375" height="556.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="711.33333333333337"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM4-SK-4an">
-                                <rect key="frame" x="0.0" y="620.5" width="375" height="46.5"/>
+                                <rect key="frame" x="0.0" y="799.33333333333337" width="414" height="62.666666666666629"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="21"/>
                                 <state key="normal" title="Xác Nhận">
@@ -452,19 +452,19 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số căn hộ (nếu có)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-HU-Eyi">
-                                <rect key="frame" x="16" y="74" width="150" height="30"/>
+                                <rect key="frame" x="16" y="98" width="165.66666666666666" height="30"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên căn hộ (nếu có)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uNs-mW-us0">
-                                <rect key="frame" x="209" y="74" width="150" height="30"/>
+                                <rect key="frame" x="232.33333333333337" y="98" width="165.66666666666663" height="30"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-8K-icr">
-                                <rect key="frame" x="16" y="114" width="343" height="46.5"/>
+                                <rect key="frame" x="16" y="138" width="382" height="62.666666666666657"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -506,42 +506,98 @@
             </objects>
             <point key="canvasLocation" x="2020" y="191"/>
         </scene>
+        <!--Confirm Booking Table View Controller-->
+        <scene sceneID="ccg-7e-F5P">
+            <objects>
+                <tableViewController storyboardIdentifier="ConfirmBookingTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Ux-nG-zSJ" customClass="ConfirmBookingTableViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M35-H8-rYE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basic_cell" rowHeight="84" id="pZ9-eB-Jtb" customClass="ConfirmBookingableViewCell" customModule="Clean" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pZ9-eB-Jtb" id="2Hv-fb-g5n">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="skm-Uf-Wxx">
+                                            <rect key="frame" x="16" y="21" width="42" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="skm-Uf-Wxx" secondAttribute="height" multiplier="1:1" id="2zW-oQ-lO8"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-mA-TyE">
+                                            <rect key="frame" x="70" y="31.666666666666671" width="308" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WAf-mA-TyE" firstAttribute="leading" secondItem="skm-Uf-Wxx" secondAttribute="trailing" constant="12" id="C1r-ro-MV3"/>
+                                        <constraint firstItem="WAf-mA-TyE" firstAttribute="centerY" secondItem="2Hv-fb-g5n" secondAttribute="centerY" id="aiZ-bE-kNR"/>
+                                        <constraint firstItem="skm-Uf-Wxx" firstAttribute="centerY" secondItem="2Hv-fb-g5n" secondAttribute="centerY" id="km3-vZ-4GW"/>
+                                        <constraint firstItem="skm-Uf-Wxx" firstAttribute="leading" secondItem="2Hv-fb-g5n" secondAttribute="leading" constant="16" id="ocE-pT-Gao"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="WAf-mA-TyE" secondAttribute="trailing" constant="16" id="v4W-Ih-T39"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="skm-Uf-Wxx" firstAttribute="height" secondItem="pZ9-eB-Jtb" secondAttribute="height" multiplier="0.5" id="8aX-lR-TpI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="WAf-mA-TyE" id="Mbm-Ag-uYR"/>
+                                    <outlet property="image_icon" destination="skm-Uf-Wxx" id="Bq6-90-pn4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Ux-nG-zSJ" id="DYo-gd-2ll"/>
+                            <outlet property="delegate" destination="9Ux-nG-zSJ" id="nMh-JV-OEj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3a9-Q4-xq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.72463768115949" y="1958.7053571428571"/>
+        </scene>
         <!--Personal View Controller-->
         <scene sceneID="x7F-Nb-RKk">
             <objects>
                 <viewController storyboardIdentifier="PersonalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X9G-VL-5ux" customClass="PersonalViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Fo-9g-krE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VM8-97-Wlh">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foW-ox-Ipr">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="229.66666666666666"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhg-Ch-Wij">
-                                        <rect key="frame" x="0.0" y="457" width="375" height="190"/>
+                                        <rect key="frame" x="0.0" y="588.33333333333337" width="414" height="229.66666666666663"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-se-XaJ">
-                                        <rect key="frame" x="0.0" y="190" width="375" height="267"/>
+                                        <rect key="frame" x="0.0" y="229.66666666666666" width="414" height="358.66666666666674"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Họ và Tên" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnx-Cc-CjF">
-                                                <rect key="frame" x="16" y="20" width="343" height="35"/>
+                                                <rect key="frame" x="16" y="19.999999999999996" width="382" height="46.666666666666657"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ny-XS-8PE">
-                                                <rect key="frame" x="16" y="75" width="343" height="34.5"/>
+                                                <rect key="frame" x="16" y="86.666666666666629" width="382" height="46.666666666666657"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-KD-WqD">
-                                                <rect key="frame" x="75" y="149.5" width="225" height="40"/>
+                                                <rect key="frame" x="82.666666666666671" y="173.33333333333331" width="248.66666666666663" height="53.666666666666657"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Xác Nhận">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -551,7 +607,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OY-NI-Vzu">
-                                                <rect key="frame" x="75" y="209.5" width="225" height="40"/>
+                                                <rect key="frame" x="82.666666666666671" y="246.99999999999994" width="248.66666666666663" height="54"/>
                                                 <state key="normal" title="Huỷ">
                                                     <color key="titleColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -623,18 +679,18 @@
             <objects>
                 <viewController storyboardIdentifier="DeepPostServiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F8y-rz-qZA" customClass="DeepPostServiceViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Qo-zf-FOr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PRh-1a-DNd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="529.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="684"/>
                                 <color key="backgroundColor" red="0.60784313729999995" green="0.56078431370000004" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="location_cell" rowHeight="40" id="Ngv-B8-Pjn" customClass="UserLocationTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ngv-B8-Pjn" id="FFP-a9-Hvq">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="yCF-H1-SzC">
@@ -645,7 +701,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vn-nI-XkA">
-                                                    <rect key="frame" x="48" y="20" width="278" height="0.0"/>
+                                                    <rect key="frame" x="48" y="20" width="312" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -666,21 +722,21 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="date_cell" id="gCh-xd-2ek" customClass="DateTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="68" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="68" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gCh-xd-2ek" id="gph-fA-ZAi">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rl5-5x-0N8">
-                                                    <rect key="frame" x="16" y="9" width="26.5" height="26"/>
+                                                    <rect key="frame" x="15.999999999999998" y="8.6666666666666661" width="26.333333333333329" height="26.666666666666671"/>
                                                     <color key="tintColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="rl5-5x-0N8" secondAttribute="height" multiplier="1:1" id="nnv-RK-s1J"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhấn để nhâp ngày đặt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CY-WO-OhJ">
-                                                    <rect key="frame" x="52.5" y="11.5" width="265.5" height="21.5"/>
+                                                    <rect key="frame" x="52.333333333333343" y="11.333333333333334" width="299.66666666666663" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -702,20 +758,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="time_cell" rowHeight="71" id="RQg-3Z-apu" customClass="AreaTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="112" width="375" height="71"/>
+                                        <rect key="frame" x="0.0" y="112" width="414" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RQg-3Z-apu" id="Fup-ve-MJx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Diện tích" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQm-QX-gn0">
-                                                    <rect key="frame" x="66.5" y="27" width="293.5" height="17"/>
+                                                    <rect key="frame" x="66.666666666666657" y="27" width="327.33333333333337" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-vx-Jui">
-                                                    <rect key="frame" x="16" y="14" width="42.5" height="43"/>
+                                                    <rect key="frame" x="15.999999999999996" y="14.333333333333332" width="42.666666666666657" height="42.333333333333343"/>
                                                     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="LoO-vx-Jui" secondAttribute="height" multiplier="1:1" id="oAY-BE-Ya0"/>
@@ -738,20 +794,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="people_cell" id="apM-hd-9Re" customClass="PersonInfoTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="183" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="183" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="apM-hd-9Re" id="xTV-B7-vB2">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-37-5HP">
-                                                    <rect key="frame" x="16" y="9" width="26.5" height="26"/>
+                                                    <rect key="frame" x="15.999999999999998" y="8.6666666666666661" width="26.333333333333329" height="26.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="mCV-37-5HP" secondAttribute="height" multiplier="1:1" id="o1J-e6-GFj"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhấn để nhập thông tin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfH-4k-E7H">
-                                                    <rect key="frame" x="52.5" y="11.5" width="273.5" height="21.5"/>
+                                                    <rect key="frame" x="52.333333333333343" y="11.333333333333334" width="307.66666666666663" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -772,14 +828,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="note_cell" rowHeight="95" id="Scl-nM-NxW" customClass="BookingNoteTableViewCell" customModule="Clean" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="227" width="375" height="95"/>
+                                        <rect key="frame" x="0.0" y="227" width="414" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Scl-nM-NxW" id="gQK-hq-m71">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a3L-R0-EnY">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="95"/>
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="95"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -799,24 +855,24 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZI-73-eWV">
-                                <rect key="frame" x="0.0" y="593.5" width="375" height="73.5"/>
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghi chú :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pos-aS-wad">
-                                        <rect key="frame" x="8" y="8" width="71" height="21.5"/>
+                                        <rect key="frame" x="8" y="8.0000000000000018" width="71" height="21.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIw-6Z-abC">
-                                        <rect key="frame" x="16" y="39.5" width="214.5" height="0.0"/>
+                                        <rect key="frame" x="15.999999999999986" y="39.666666666666629" width="241.66666666666663" height="0.0"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="23"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkv-Tc-3Tq">
-                                        <rect key="frame" x="246.5" y="7.5" width="112.5" height="58.5"/>
+                                        <rect key="frame" x="273.66666666666669" y="9" width="124.33333333333331" height="72"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
                                         <state key="normal" title="Xác Nhận">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -825,8 +881,8 @@
                                             <action selector="done:" destination="1b4-eU-OIr" eventType="touchUpInside" id="zpS-xg-VlJ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MR&amp;MRS CLEAN sẽ gọi lại để tư vấn cho gói dịch vụ này" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwh-gc-u3I">
-                                        <rect key="frame" x="8" y="39.5" width="222.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MR&amp;MRS CLEAN sẽ gọi lại để tư vấn cho gói dịch vụ này" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gwh-gc-u3I">
+                                        <rect key="frame" x="7.9999999999999858" y="39.666666666666629" width="249.66666666666663" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -838,6 +894,7 @@
                                     <constraint firstItem="Pos-aS-wad" firstAttribute="top" secondItem="aZI-73-eWV" secondAttribute="top" constant="8" id="8rY-FP-9Hg"/>
                                     <constraint firstItem="Rkv-Tc-3Tq" firstAttribute="leading" secondItem="Gwh-gc-u3I" secondAttribute="trailing" constant="16" id="AEf-l5-Txc"/>
                                     <constraint firstItem="Gwh-gc-u3I" firstAttribute="leading" secondItem="aZI-73-eWV" secondAttribute="leading" constant="8" id="FF3-rp-3Fk"/>
+                                    <constraint firstAttribute="height" constant="90" id="FXI-Qe-pCG"/>
                                     <constraint firstItem="Rkv-Tc-3Tq" firstAttribute="centerY" secondItem="aZI-73-eWV" secondAttribute="centerY" id="Kzq-7d-J2h"/>
                                     <constraint firstItem="Rkv-Tc-3Tq" firstAttribute="height" secondItem="aZI-73-eWV" secondAttribute="height" multiplier="0.8" id="QFI-Ne-seF"/>
                                     <constraint firstAttribute="trailing" secondItem="Rkv-Tc-3Tq" secondAttribute="trailing" constant="16" id="VFq-vB-iUQ"/>
@@ -856,7 +913,6 @@
                             <constraint firstItem="PRh-1a-DNd" firstAttribute="top" secondItem="E1p-7f-I2t" secondAttribute="top" id="HH0-Th-b6O"/>
                             <constraint firstItem="aZI-73-eWV" firstAttribute="top" secondItem="PRh-1a-DNd" secondAttribute="bottom" id="QUl-tu-lgA"/>
                             <constraint firstItem="aZI-73-eWV" firstAttribute="leading" secondItem="E1p-7f-I2t" secondAttribute="leading" id="ouu-iF-xoi"/>
-                            <constraint firstItem="aZI-73-eWV" firstAttribute="height" secondItem="7Qo-zf-FOr" secondAttribute="height" multiplier="0.11" id="pFv-y8-r1f"/>
                             <constraint firstItem="aZI-73-eWV" firstAttribute="trailing" secondItem="E1p-7f-I2t" secondAttribute="trailing" id="r32-DZ-RkJ"/>
                             <constraint firstItem="PRh-1a-DNd" firstAttribute="trailing" secondItem="E1p-7f-I2t" secondAttribute="trailing" id="z9p-Ce-ycG"/>
                         </constraints>
@@ -867,7 +923,7 @@
                         <outlet property="btn_done" destination="Rkv-Tc-3Tq" id="TSh-Wu-7WR"/>
                         <outlet property="lbl_note" destination="Pos-aS-wad" id="bpj-jv-sRD"/>
                         <outlet property="tableView" destination="PRh-1a-DNd" id="v3v-RK-vGs"/>
-                        <segue destination="KNI-Dw-Rir" kind="show" identifier="deep_post_confirm" id="Sun-Ap-OC7"/>
+                        <segue destination="9Ux-nG-zSJ" kind="show" identifier="deep_post_confirm" id="Df4-Y6-Pah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KIs-B6-qhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -879,27 +935,27 @@
             <objects>
                 <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XlY-pU-FMh" customClass="CalendarViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B1z-Yj-uMv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocb-Xy-wcd">
-                                <rect key="frame" x="0.0" y="267" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="324.33333333333331" width="414" height="537.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUT-1g-yxb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpT-Gq-fYv">
-                                        <rect key="frame" x="0.0" y="320" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="430.00000000000006" width="414" height="107.66666666666669"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chọn thời gian" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPw-HH-ycF">
-                                                <rect key="frame" x="16" y="12" width="112.5" height="56"/>
+                                                <rect key="frame" x="15.999999999999993" y="16.333333333333258" width="124.33333333333331" height="75.333333333333329"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8D-fF-rqe">
-                                                <rect key="frame" x="153" y="12" width="206" height="56"/>
+                                                <rect key="frame" x="170.33333333333337" y="16.333333333333258" width="227.66666666666663" height="75.333333333333329"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                                 <state key="normal" title="Hoàn Tất">
@@ -936,10 +992,10 @@
                                 </constraints>
                             </view>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4P-2L-amT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="324.33333333333331"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-Ne-Ep8">
-                                        <rect key="frame" x="321.5" y="60" width="37.5" height="37.5"/>
+                                        <rect key="frame" x="356.66666666666669" y="60" width="41.333333333333314" height="41.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ycF-Ne-Ep8" secondAttribute="height" multiplier="1:1" id="kO0-nR-c9v"/>
                                         </constraints>
@@ -975,102 +1031,102 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aE2-iW-O0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="1135"/>
+            <point key="canvasLocation" x="2020" y="933"/>
         </scene>
         <!--XÁC NHẬN DỊCH VỤ-->
         <scene sceneID="bBv-2w-KnZ">
             <objects>
                 <viewController storyboardIdentifier="ConfirmBookingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KNI-Dw-Rir" customClass="ConfirmBookingViewController" customModule="Clean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dmx-Jg-7BJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN ĐƠN HÀNG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvx-ti-Hht">
-                                <rect key="frame" x="16" y="84" width="343" height="21.5"/>
+                                <rect key="frame" x="16" y="108" width="382" height="21.666666666666657"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN KHÁCH HÀNG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aps-4q-MEK">
-                                <rect key="frame" x="16" y="253.5" width="343" height="21.5"/>
+                                <rect key="frame" x="16" y="291.33333333333331" width="382" height="21.333333333333314"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TỔNG CỘNG :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23w-KR-HiN">
-                                <rect key="frame" x="16" y="433" width="343" height="38"/>
+                                <rect key="frame" x="16" y="484.66666666666669" width="382" height="37.666666666666686"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày làm việc :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOP-Xd-Jmk">
-                                <rect key="frame" x="16" y="125.5" width="112.5" height="19"/>
+                                <rect key="frame" x="15.999999999999993" y="149.66666666666666" width="124.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.11764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian đặt :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBV-3C-mlB">
-                                <rect key="frame" x="138.5" y="125.5" width="220.5" height="19"/>
+                                <rect key="frame" x="150.33333333333337" y="149.66666666666666" width="247.66666666666663" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng thời gian :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwX-CG-zR5">
-                                <rect key="frame" x="16" y="159.5" width="112.5" height="19"/>
+                                <rect key="frame" x="15.999999999999993" y="183.66666666666666" width="124.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian đặt :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-oS-gBU">
-                                <rect key="frame" x="138.5" y="159.5" width="220.5" height="19"/>
+                                <rect key="frame" x="150.33333333333337" y="183.66666666666666" width="247.66666666666663" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghi chú :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpA-YD-eQC">
-                                <rect key="frame" x="16" y="208.5" width="112.5" height="19"/>
+                                <rect key="frame" x="15.999999999999993" y="232.66666666666666" width="124.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.11764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian đặt :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgt-2i-kxQ">
-                                <rect key="frame" x="138.5" y="193.5" width="220.5" height="40"/>
+                                <rect key="frame" x="150.33333333333337" y="217.66666666666666" width="247.66666666666663" height="53.666666666666657"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ và Tên :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-OF-Jv5">
-                                <rect key="frame" x="16" y="295" width="112.5" height="19"/>
+                                <rect key="frame" x="15.999999999999993" y="332.66666666666669" width="124.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian đặt :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4c-4G-N9V">
-                                <rect key="frame" x="138.5" y="295" width="220.5" height="19"/>
+                                <rect key="frame" x="150.33333333333337" y="332.66666666666669" width="247.66666666666663" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điện thoại :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ko-Dw-Qm7">
-                                <rect key="frame" x="16" y="329" width="112.5" height="19"/>
+                                <rect key="frame" x="15.999999999999993" y="366.66666666666669" width="124.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian đặt :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-Vd-72g">
-                                <rect key="frame" x="138.5" y="329" width="220.5" height="19"/>
+                                <rect key="frame" x="150.33333333333337" y="366.66666666666669" width="247.66666666666663" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pF-Wc-1fg">
-                                <rect key="frame" x="18" y="378" width="110.5" height="19"/>
+                                <rect key="frame" x="17.999999999999993" y="415.66666666666669" width="122.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-3U-PNL">
-                                <rect key="frame" x="0.0" y="620.5" width="375" height="46.5"/>
+                                <rect key="frame" x="0.0" y="799.33333333333337" width="414" height="62.666666666666629"/>
                                 <color key="backgroundColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                 <state key="normal" title="Hoàn Tất">
@@ -1081,13 +1137,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian đặt :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TpG-5e-ktR">
-                                <rect key="frame" x="138.5" y="363" width="220.5" height="40"/>
+                                <rect key="frame" x="150.33333333333337" y="400.66666666666669" width="247.66666666666663" height="54"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Lưu ý : Nhân viên của chúng tôi sẽ liên hệ với quý khách để xác nhận đơn hàng. Xin cảm ơn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2K-Sx-Su6">
-                                <rect key="frame" x="16" y="491" width="343" height="38"/>
+                                <rect key="frame" x="16" y="542.33333333333337" width="382" height="37.666666666666629"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1174,22 +1230,21 @@
     <resources>
         <image name="Booking-small" width="26" height="26"/>
         <image name="calendar_icon" width="57" height="61"/>
-        <image name="cleaning" width="384" height="384"/>
+        <image name="cleaning" width="512" height="512"/>
         <image name="clock_icon" width="51" height="51"/>
         <image name="close_icon" width="53" height="54"/>
         <image name="group_icon" width="90" height="92"/>
         <image name="home" width="750" height="1334"/>
-        <image name="house" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="location" width="154" height="154"/>
+        <image name="house" width="512" height="512"/>
+        <image name="location" width="51.333332061767578" height="51.333332061767578"/>
         <image name="people_icon" width="51" height="51"/>
-        <image name="sweep" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="vacuum-cleaner" width="384" height="384"/>
+        <image name="sweep" width="512" height="512"/>
+        <image name="vacuum-cleaner" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sun-Ap-OC7"/>
-        <segue reference="ptI-Qh-rOS"/>
+        <segue reference="VEX-fx-fCt"/>
         <segue reference="1hB-M1-48h"/>
-        <segue reference="hE2-Mk-qxf"/>
-        <segue reference="aG3-xX-FTn"/>
+        <segue reference="4v3-7N-JVP"/>
+        <segue reference="yta-Dx-IvD"/>
     </inferredMetricsTieBreakers>
 </document>

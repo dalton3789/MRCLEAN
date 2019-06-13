@@ -28,7 +28,7 @@ class Server {
                 print(error ?? "")
             } else {
                 do {
-                    guard let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any] else { return }
+                    guard let json = ((try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any]) as [String : Any]??) else { return }
                     
                     guard let errors = json?["errors"] as? [[String: Any]] else { return }
                     if errors.count > 0 {

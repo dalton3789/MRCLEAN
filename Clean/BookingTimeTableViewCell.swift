@@ -52,7 +52,7 @@ class BookingTimeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func dismissKeyboard(){
+    @objc func dismissKeyboard(){
         txt_time.resignFirstResponder()
         txt_totalWorker.resignFirstResponder()
     }
