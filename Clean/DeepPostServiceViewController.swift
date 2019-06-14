@@ -11,7 +11,7 @@ import UIKit
 class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PassData {
 
 
-    var tittle = "DỊCH VỤ CHUYÊN SÂU"
+    var tittle = "CHUYÊN SÂU"
     let titles = ["ĐỊA ĐIỂM", "NGÀY ĐẶT", "DIỆN TÍCH", "THÔNG TIN LIÊN HỆ", "GHI CHÚ"]
     var area = ""
     
@@ -42,6 +42,7 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
         
         sharedAction.roundBorder(control: btn_done, width: 1, color: UIColor.white.cgColor, radius: 20)
         sharedAction.setBottomBorder(view: lbl_note, lineColor : hexStringToUIColor(hex: "331E1A"))
+        tableView.reload(animationDirection: .right)
     }
     
     @objc func dismisKeyboard(){
@@ -176,6 +177,7 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
             sharedAction.showErrorToast(message: "Vui lòng nhập đầy đủ thông tin", view: self.view, startY: (self.navigationController?.navigationBar.frame.height)!, endY: (self.navigationController?.navigationBar.frame.height)! + 45)
         } else {
             request.note = sharedAction.getSharedData(key: globalVariables.booking_note)
+            request.type = self.tittle
             
             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "endTime" : request.totalTime, "note" : request.note + " - Diện tích : " + request.area + " - Loại : " + tittle, "total" : request.total] as [String: Any]
             let link = Config.destination + "/function/createRequestBook.php"

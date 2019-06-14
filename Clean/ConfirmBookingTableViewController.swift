@@ -22,40 +22,80 @@ class ConfirmBookingTableViewController: UITableViewController {
 
         data.append(Data(icon: UIImage(), desciption: "THÔNG TIN ĐƠN HÀNG"))
         data.append(Data(icon: UIImage(named: "date_icon")!, desciption: "Ngày làm việc : \(order.date)"))
-        data.append(Data(icon: UIImage(named: "time_icon")!, desciption: "Tổng thời gian : \(order.totalTime)"))
+        data.append(Data(icon: UIImage(named: "service_icon")!, desciption: "Loại dịch vụ : \(order.type)"))
+        data.append(Data(icon: UIImage(named: "meter_icon")!, desciption: "Diện tích : \(order.area)"))
         data.append(Data(icon: UIImage(named: "pin_icon")!, desciption: "Ghi chú : \(order.note)"))
-        data.append(Data(icon: UIImage(), desciption: ""))
+        //data.append(Data(icon: UIImage(), desciption: ""))
         data.append(Data(icon: UIImage(), desciption: "THÔNG TIN KHÁCH HÀNG"))
-        data.append(Data(icon: UIImage(named: "date_icon")!, desciption: "Họ và Tên : \(order.name)"))
-        data.append(Data(icon: UIImage(named: "date_icon")!, desciption: "Só điện thoại : \(order.phone)"))
-        data.append(Data(icon: UIImage(named: "date_icon")!, desciption: "Địa chỉ : \(order.address)"))
-        data.append(Data(icon: UIImage(), desciption: ""))
-        data.append(Data(icon: UIImage(), desciption: "* Lưu ý : Nhân viên của chúng tôi sẽ liên hệ với quý khách để xác nhận đơn hàng. Xin cảm ơn"))
-
+        data.append(Data(icon: UIImage(named: "account")!, desciption: "Họ và Tên : \(order.name)"))
+        data.append(Data(icon: UIImage(named: "phone_icon")!, desciption: "Số điện thoại : \(order.phone)"))
+        data.append(Data(icon: UIImage(named: "address_icon")!, desciption: "Địa chỉ : \(order.address)"))
+        //data.append(Data(icon: UIImage(), desciption: ""))
+        
+        tableView.reload(animationDirection: .down)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        title = "XÁC NHẬN DỊCH VỤ"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.count
+        switch section {
+        case 0:
+            return data.count
+        default:
+            return 1
+        }
+        
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "basic_cell") as! ConfirmBookingableViewCell
         
-        cell.setData(image: data[indexPath.row].icon, description: data[indexPath.row].desciption)
-        
-        return cell
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "basic_cell") as! ConfirmBookingableViewCell
+            
+            cell.setData(image: data[indexPath.row].icon, description: data[indexPath.row].desciption)
+            
+            return cell
+        case 1 :
+            let cell = UITableViewCell()
+            cell.textLabel?.text = "* Lưu ý : Nhân viên của chúng tôi sẽ liên hệ với quý khách để xác nhận đơn hàng. Xin cảm ơn"
+            cell.textLabel?.numberOfLines = 0
+            cell.textLabel?.adjustsFontSizeToFitWidth = true
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "confirm_cell") as! ConfirmButtonTableViewCell
+            cell.controller = self.navigationController
+            return cell
+            
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 1:
+            return 120
+        case 2:
+            return 80
+        default:
+            return 40
+        }
     }
 
     struct Data {
         var icon : UIImage
         var desciption : String
     }
+    
+    
 }

@@ -4,6 +4,6 @@
 target 'Clean' do
 
 pod ‘Firebase/Core’
-pod ‘Firebase/Messaging’
+pod ‘Firebase/Messaging’, '~> 4.1.0'
 
 end

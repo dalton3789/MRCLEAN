@@ -529,7 +529,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-mA-TyE">
-                                            <rect key="frame" x="70" y="31.666666666666671" width="308" height="20.333333333333329"/>
+                                            <rect key="frame" x="70" y="32" width="308" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -549,6 +549,36 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="WAf-mA-TyE" id="Mbm-Ag-uYR"/>
                                     <outlet property="image_icon" destination="skm-Uf-Wxx" id="Bq6-90-pn4"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="confirm_cell" rowHeight="86" id="isO-Cn-xzr" customClass="ConfirmButtonTableViewCell" customModule="Clean" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="112" width="414" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isO-Cn-xzr" id="dyL-kn-s36">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbg-g4-Opu">
+                                            <rect key="frame" x="20" y="11" width="374" height="64"/>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.1176470588" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <state key="normal" title="Hoàn Tất">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="close:" destination="isO-Cn-xzr" eventType="touchUpInside" id="mjg-6W-0de"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nbg-g4-Opu" firstAttribute="leading" secondItem="dyL-kn-s36" secondAttribute="leadingMargin" id="7zA-Fc-x4M"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nbg-g4-Opu" secondAttribute="trailing" id="L65-c1-BGF"/>
+                                        <constraint firstItem="nbg-g4-Opu" firstAttribute="top" secondItem="dyL-kn-s36" secondAttribute="topMargin" id="eZF-zF-9kx"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nbg-g4-Opu" secondAttribute="bottom" id="ocM-Dx-hXN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="confirmButton" destination="nbg-g4-Opu" id="Rq0-2S-QK2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1122,12 +1152,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pF-Wc-1fg">
                                 <rect key="frame" x="17.999999999999993" y="415.66666666666669" width="122.33333333333331" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <color key="textColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.11764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-3U-PNL">
                                 <rect key="frame" x="0.0" y="799.33333333333337" width="414" height="62.666666666666629"/>
-                                <color key="backgroundColor" red="0.1997891665" green="0.1179371104" blue="0.10195425900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.11764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                 <state key="normal" title="Hoàn Tất">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1242,9 +1272,9 @@
         <image name="vacuum-cleaner" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VEX-fx-fCt"/>
+        <segue reference="ptI-Qh-rOS"/>
         <segue reference="1hB-M1-48h"/>
-        <segue reference="4v3-7N-JVP"/>
-        <segue reference="yta-Dx-IvD"/>
+        <segue reference="hE2-Mk-qxf"/>
+        <segue reference="aG3-xX-FTn"/>
     </inferredMetricsTieBreakers>
 </document>

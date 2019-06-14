@@ -25,6 +25,8 @@
 		1AF5200F1F0BA27D005720E2 /* Clean.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5200D1F0BA27D005720E2 /* Clean.xcdatamodeld */; };
 		1AF520111F0BA27D005720E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF520101F0BA27D005720E2 /* Assets.xcassets */; };
 		1AF520141F0BA27D005720E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF520121F0BA27D005720E2 /* LaunchScreen.storyboard */; };
+		1FD9B7BC22B3403100F8B46B /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9B7BB22B3403100F8B46B /* UITableView+extension.swift */; };
+		1FD9B7BE22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9B7BD22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift */; };
 		A706EB8A2224E1DD006D7A3A /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706EB892224E1DD006D7A3A /* PersonInfoTableViewCell.swift */; };
 		A706EB8C2224F52F006D7A3A /* BookingTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706EB8B2224F52F006D7A3A /* BookingTimeTableViewCell.swift */; };
 		A708A3DE221CF780003DBF5C /* BookService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A708A3DD221CF780003DBF5C /* BookService.storyboard */; };
@@ -114,6 +116,8 @@
 		1AF520101F0BA27D005720E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AF520131F0BA27D005720E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AF520151F0BA27D005720E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FD9B7BB22B3403100F8B46B /* UITableView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
+		1FD9B7BD22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButtonTableViewCell.swift; sourceTree = "<group>"; };
 		4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A706EB892224E1DD006D7A3A /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
 		A706EB8B2224F52F006D7A3A /* BookingTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTimeTableViewCell.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 		1A51314F1F2C513200A31C9C /* sharedactions */ = {
 			isa = PBXGroup;
 			children = (
+				1FD9B7BA22B3402600F8B46B /* extension */,
 				A749C145222673EC00745238 /* Calendar */,
 				1A67D00E1F2C2E61001EE217 /* UserValidation.swift */,
 				1A9ED0C01F2C502600968AF3 /* Message.swift */,
@@ -243,6 +248,14 @@
 				A7571E602255B35500352E78 /* GoogleService-Info.plist */,
 			);
 			path = Clean;
+			sourceTree = "<group>";
+		};
+		1FD9B7BA22B3402600F8B46B /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9B7BB22B3403100F8B46B /* UITableView+extension.swift */,
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 		8E8D6C3F55F3F804AA97166D /* Pods */ = {
@@ -331,6 +344,7 @@
 				A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */,
 				A72513AF225A34A500208479 /* AreaTableViewCell.swift */,
 				E89047B222B29284000B2BF3 /* ConfirmBookingableViewCell.swift */,
+				1FD9B7BD22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -407,7 +421,7 @@
 				TargetAttributes = {
 					1AF520021F0BA27D005720E2 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = AFGW448WN5;
+						DevelopmentTeam = VL9W949V2N;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -563,6 +577,7 @@
 				A72513AC2259FD7B00208479 /* HomeBookingViewController.swift in Sources */,
 				A7FEA7CD222FB299000E90E3 /* MessageDetailViewController.swift in Sources */,
 				A749C14B2226741A00745238 /* WeekdaysView.swift in Sources */,
+				1FD9B7BC22B3403100F8B46B /* UITableView+extension.swift in Sources */,
 				A78916D6222986660083305A /* AccountViewController.swift in Sources */,
 				1A66795D1F0E3C32002BF0E0 /* LoadGif.swift in Sources */,
 				A749C14C2226741A00745238 /* CalenderView.swift in Sources */,
@@ -579,6 +594,7 @@
 				A72513AE225A02D400208479 /* DeepPostServiceViewController.swift in Sources */,
 				A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */,
 				A77D0B022232BDE1003D644E /* AccountTableViewCell.swift in Sources */,
+				1FD9B7BE22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift in Sources */,
 				A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,7 +761,7 @@
 				CODE_SIGN_ENTITLEMENTS = Clean/Clean.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AFGW448WN5;
+				DEVELOPMENT_TEAM = VL9W949V2N;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Clean/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -768,7 +784,7 @@
 				CODE_SIGN_ENTITLEMENTS = Clean/Clean.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AFGW448WN5;
+				DEVELOPMENT_TEAM = VL9W949V2N;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Clean/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

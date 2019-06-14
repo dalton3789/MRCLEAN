@@ -47,7 +47,7 @@ class HomeBookingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "post_service" {
             let vc = segue.destination as! DeepPostServiceViewController
-            vc.tittle = "DỊCH VỤ SAU XÂY DỰNG"
+            vc.tittle = "SAU XÂY DỰNG"
         }
     }
     
