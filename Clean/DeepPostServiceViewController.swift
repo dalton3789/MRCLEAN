@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PassData {
 
@@ -17,18 +18,12 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
     
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var btn_done: UIButton!
-    
     @IBOutlet weak var lbl_note: UILabel!
     
     
-    
-    
     let sharedAction = SharedFunctions()
-    
     let globalVariables = GlobalValues()
-    
     let request = ServiceRequest()
     
     
@@ -144,10 +139,6 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "deep_post_name" {
-            let vc  = segue.destination as! PersonalViewController
-            vc.delegate = self
-        }
         if segue.identifier == "deep_post_confirm" {
             let vc = segue.destination as! ConfirmBookingTableViewController
             vc.order = request
@@ -163,12 +154,21 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 3 {
+            PopupDialogHelper.showPersonalBookingInfoPopup(viewController: self,doneButton: donePopupAction(),delegate: self)
+        }
+    }
+    
+    func donePopupAction(){
+        tableView.reloadData()
+    }
+    
     func passData(data: String) {
         tableView.reloadData()
     }
     
-    
-    
+
     @IBAction func confirm(_ sender: UIButton) {
         let areaCell = tableView.cellForRow(at: IndexPath(row: 0, section: 2)) as! AreaTableViewCell
         request.area = areaCell.getValue()
@@ -182,7 +182,9 @@ class DeepPostServiceViewController: UIViewController, UITableViewDataSource, UI
             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "endTime" : request.totalTime, "note" : request.note + " - Diện tích : " + request.area + " - Loại : " + tittle, "total" : request.total] as [String: Any]
             let link = Config.destination + "/function/createRequestBook.php"
             
-            //server.sendHTTPrequsetWithData(request_content, link)
+          
+            
+            server.sendHTTPrequsetWithData(request_content, link)
             
             
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_date)

@@ -139,9 +139,16 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        performSegue(withIdentifier: "segue_location", sender: self)
-       
+        
+        if indexPath.section == 3 {
+            PopupDialogHelper.showPersonalBookingInfoPopup(viewController: self, doneButton: donePopupAction(),delegate: self)
+        }
     }
+    
+    func donePopupAction(){
+        tableView.reloadData()
+    }
+    
     
      func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40))
@@ -165,10 +172,6 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue_people" {
-            let vc  = segue.destination as! PersonalViewController
-            vc.delegate = self
-        }
         if segue.identifier == "segue_confirmbooking" {
             let vc = segue.destination as! ConfirmBookingViewController
             vc.order = request
@@ -213,7 +216,7 @@ class BookServiceViewController: UIViewController, UITableViewDelegate, UITableV
             let request_content = ["email": "", "name": request.name, "phone": request.phone, "address" : request.address, "bdate": "", "startTime": request.date, "endTime" : request.totalTime, "note" : request.note, " " : request.totalTime, "total" : request.total] as [String: Any]
              let link = Config.destination + "/function/createRequestBook.php"
             
-             //server.sendHTTPrequsetWithData(request_content, link)
+             server.sendHTTPrequsetWithData(request_content, link)
             
             
             UserDefaults.standard.removeObject(forKey: globalVariables.booking_date)

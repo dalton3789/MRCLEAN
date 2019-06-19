@@ -101,12 +101,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "messageDetail_segue"{
-            let vc = segue.destination as! MessageDetailViewController
-            vc.message = self.messageDetail
-        }
-        if segue.identifier == "segue_sendMessage"{
-            let vc = segue.destination as! SendMessageViewController
-            vc.passDelegate = self
+            PopupDialogHelper.showMessageContentDialog(viewController: self,message: self.messageDetail )
         }
     }
     
@@ -122,8 +117,10 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         tableView.reloadData()
     }
     
+    @IBAction func createNewMessage(_ sender: UIBarButtonItem) {
+        PopupDialogHelper.showMessageContentDialog(viewController : self)
+    }
     
-  
     
     func passData(data: String) {
         messages = dataUser.GetRepsonseMessage()

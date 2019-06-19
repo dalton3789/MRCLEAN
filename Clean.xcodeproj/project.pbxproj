@@ -25,6 +25,13 @@
 		1AF5200F1F0BA27D005720E2 /* Clean.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5200D1F0BA27D005720E2 /* Clean.xcdatamodeld */; };
 		1AF520111F0BA27D005720E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF520101F0BA27D005720E2 /* Assets.xcassets */; };
 		1AF520141F0BA27D005720E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF520121F0BA27D005720E2 /* LaunchScreen.storyboard */; };
+		1FB6E6EC22B9D12A0085FC72 /* PersonalBookingInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6E6EB22B9D12A0085FC72 /* PersonalBookingInfo.xib */; };
+		1FB6E6EF22B9D2FA0085FC72 /* PopupDialogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6E6EE22B9D2FA0085FC72 /* PopupDialogHelper.swift */; };
+		1FB6E6F122B9DADB0085FC72 /* PersonalBookingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6E6F022B9DADB0085FC72 /* PersonalBookingInfoViewController.swift */; };
+		1FB6E6F422B9EC150085FC72 /* MessageContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6E6F322B9EC150085FC72 /* MessageContent.xib */; };
+		1FB6E6F622B9EC230085FC72 /* MessageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6E6F522B9EC230085FC72 /* MessageContentViewController.swift */; };
+		1FB6E6F922B9F6FE0085FC72 /* SendMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6E6F822B9F6FE0085FC72 /* SendMessage.xib */; };
+		1FB6E6FB22B9F7580085FC72 /* SendMessagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6E6FA22B9F7580085FC72 /* SendMessagePopupViewController.swift */; };
 		1FD9B7BC22B3403100F8B46B /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9B7BB22B3403100F8B46B /* UITableView+extension.swift */; };
 		1FD9B7BE22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9B7BD22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift */; };
 		A706EB8A2224E1DD006D7A3A /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706EB892224E1DD006D7A3A /* PersonInfoTableViewCell.swift */; };
@@ -51,11 +58,9 @@
 		A776115F2229398600DB4CD2 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776115E2229398600DB4CD2 /* NotificationTableViewCell.swift */; };
 		A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779AEA622242B490022168B /* BookServiceViewController.swift */; };
 		A779AEA9222431780022168B /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779AEA8222431780022168B /* DateTableViewCell.swift */; };
-		A779AEAB222439EF0022168B /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779AEAA222439EF0022168B /* PersonalViewController.swift */; };
 		A77D0B022232BDE1003D644E /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */; };
 		A77D0B042232C652003D644E /* UpdateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D0B032232C652003D644E /* UpdateAccountViewController.swift */; };
 		A78916D6222986660083305A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78916D5222986660083305A /* AccountViewController.swift */; };
-		A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78916D7222992A10083305A /* SendMessageViewController.swift */; };
 		A7BA04C3221C25B100B14FFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA04C2221C25B100B14FFE /* CoreLocation.framework */; };
 		A7D6620B22219C4500072C53 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6620A22219C4500072C53 /* LocationViewController.swift */; };
 		A7D6620E2221A74E00072C53 /* UserLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6620D2221A74E00072C53 /* UserLocationTableViewCell.swift */; };
@@ -64,7 +69,6 @@
 		A7E0B78B2245311C006C084E /* Clean.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5200D1F0BA27D005720E2 /* Clean.xcdatamodeld */; };
 		A7FEA347222C1389002B88A5 /* CustomerBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */; };
 		A7FEA349222C17F5002B88A5 /* CustomerBookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEA348222C17F5002B88A5 /* CustomerBookingTableViewCell.swift */; };
-		A7FEA7CD222FB299000E90E3 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */; };
 		AE382FC1B896C35880B920F8 /* libPods-Clean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */; };
 		E89047B122B291D7000B2BF3 /* ConfirmBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89047B022B291D7000B2BF3 /* ConfirmBookingTableViewController.swift */; };
 		E89047B322B29284000B2BF3 /* ConfirmBookingableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89047B222B29284000B2BF3 /* ConfirmBookingableViewCell.swift */; };
@@ -116,6 +120,13 @@
 		1AF520101F0BA27D005720E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AF520131F0BA27D005720E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AF520151F0BA27D005720E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB6E6EB22B9D12A0085FC72 /* PersonalBookingInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalBookingInfo.xib; sourceTree = "<group>"; };
+		1FB6E6EE22B9D2FA0085FC72 /* PopupDialogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDialogHelper.swift; sourceTree = "<group>"; };
+		1FB6E6F022B9DADB0085FC72 /* PersonalBookingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalBookingInfoViewController.swift; sourceTree = "<group>"; };
+		1FB6E6F322B9EC150085FC72 /* MessageContent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageContent.xib; sourceTree = "<group>"; };
+		1FB6E6F522B9EC230085FC72 /* MessageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentViewController.swift; sourceTree = "<group>"; };
+		1FB6E6F822B9F6FE0085FC72 /* SendMessage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendMessage.xib; sourceTree = "<group>"; };
+		1FB6E6FA22B9F7580085FC72 /* SendMessagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessagePopupViewController.swift; sourceTree = "<group>"; };
 		1FD9B7BB22B3403100F8B46B /* UITableView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		1FD9B7BD22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButtonTableViewCell.swift; sourceTree = "<group>"; };
 		4B664134FB4F68B3C0B0B692 /* libPods-Clean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,11 +154,9 @@
 		A776115E2229398600DB4CD2 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		A779AEA622242B490022168B /* BookServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookServiceViewController.swift; sourceTree = "<group>"; };
 		A779AEA8222431780022168B /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
-		A779AEAA222439EF0022168B /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		A77D0B012232BDE1003D644E /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		A77D0B032232C652003D644E /* UpdateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAccountViewController.swift; sourceTree = "<group>"; };
 		A78916D5222986660083305A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		A78916D7222992A10083305A /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
 		A7BA04C2221C25B100B14FFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A7D6620A22219C4500072C53 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		A7D6620D2221A74E00072C53 /* UserLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,7 +165,6 @@
 		A7E0B78222452FAC006C084E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBookingTableViewController.swift; sourceTree = "<group>"; };
 		A7FEA348222C17F5002B88A5 /* CustomerBookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBookingTableViewCell.swift; sourceTree = "<group>"; };
-		A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 		B626304FF9034A2B16602BC5 /* Pods-Clean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clean/Pods-Clean.release.xcconfig"; sourceTree = "<group>"; };
 		E89047B022B291D7000B2BF3 /* ConfirmBookingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingTableViewController.swift; sourceTree = "<group>"; };
 		E89047B222B29284000B2BF3 /* ConfirmBookingableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingableViewCell.swift; sourceTree = "<group>"; };
@@ -186,6 +194,7 @@
 		1A51314F1F2C513200A31C9C /* sharedactions */ = {
 			isa = PBXGroup;
 			children = (
+				1FB6E6ED22B9D2E10085FC72 /* popupDialog */,
 				1FD9B7BA22B3402600F8B46B /* extension */,
 				A749C145222673EC00745238 /* Calendar */,
 				1A67D00E1F2C2E61001EE217 /* UserValidation.swift */,
@@ -236,6 +245,7 @@
 		1AF520051F0BA27D005720E2 /* Clean */ = {
 			isa = PBXGroup;
 			children = (
+				1FB6E6E822B9D0FE0085FC72 /* Views */,
 				A708A3DC221CF749003DBF5C /* ViewControllers */,
 				A708A3DB221CF736003DBF5C /* Storyboard */,
 				1A1BA8611F4BF7E80090398E /* Clean.entitlements */,
@@ -248,6 +258,59 @@
 				A7571E602255B35500352E78 /* GoogleService-Info.plist */,
 			);
 			path = Clean;
+			sourceTree = "<group>";
+		};
+		1FB6E6E822B9D0FE0085FC72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FB6E6E922B9D1040085FC72 /* UIView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1FB6E6E922B9D1040085FC72 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				1FB6E6F722B9F6F00085FC72 /* SendMessage */,
+				1FB6E6F222B9EBEB0085FC72 /* MessageContent */,
+				1FB6E6EA22B9D1160085FC72 /* PersonalBookingInfo */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		1FB6E6EA22B9D1160085FC72 /* PersonalBookingInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1FB6E6EB22B9D12A0085FC72 /* PersonalBookingInfo.xib */,
+				1FB6E6F022B9DADB0085FC72 /* PersonalBookingInfoViewController.swift */,
+			);
+			name = PersonalBookingInfo;
+			sourceTree = "<group>";
+		};
+		1FB6E6ED22B9D2E10085FC72 /* popupDialog */ = {
+			isa = PBXGroup;
+			children = (
+				1FB6E6EE22B9D2FA0085FC72 /* PopupDialogHelper.swift */,
+			);
+			name = popupDialog;
+			sourceTree = "<group>";
+		};
+		1FB6E6F222B9EBEB0085FC72 /* MessageContent */ = {
+			isa = PBXGroup;
+			children = (
+				1FB6E6F322B9EC150085FC72 /* MessageContent.xib */,
+				1FB6E6F522B9EC230085FC72 /* MessageContentViewController.swift */,
+			);
+			name = MessageContent;
+			sourceTree = "<group>";
+		};
+		1FB6E6F722B9F6F00085FC72 /* SendMessage */ = {
+			isa = PBXGroup;
+			children = (
+				1FB6E6F822B9F6FE0085FC72 /* SendMessage.xib */,
+				1FB6E6FA22B9F7580085FC72 /* SendMessagePopupViewController.swift */,
+			);
+			name = SendMessage;
 			sourceTree = "<group>";
 		};
 		1FD9B7BA22B3402600F8B46B /* extension */ = {
@@ -295,7 +358,6 @@
 				A708A3EA221D397C003DBF5C /* ConfirmBookingViewController.swift */,
 				A7D6620A22219C4500072C53 /* LocationViewController.swift */,
 				A779AEA622242B490022168B /* BookServiceViewController.swift */,
-				A779AEAA222439EF0022168B /* PersonalViewController.swift */,
 				A749C14E222676AD00745238 /* CalendarViewController.swift */,
 				A72513AB2259FD7B00208479 /* HomeBookingViewController.swift */,
 				A72513AD225A02D400208479 /* DeepPostServiceViewController.swift */,
@@ -321,10 +383,8 @@
 				A776115A222929FE00DB4CD2 /* SignUpViewController.swift */,
 				A776115C2229397800DB4CD2 /* NotificationViewController.swift */,
 				A78916D5222986660083305A /* AccountViewController.swift */,
-				A78916D7222992A10083305A /* SendMessageViewController.swift */,
 				A7FEA346222C1389002B88A5 /* CustomerBookingTableViewController.swift */,
 				A7212F53222D220B00D03265 /* ReviewBookingViewController.swift */,
-				A7FEA7CC222FB299000E90E3 /* MessageDetailViewController.swift */,
 				A77D0B032232C652003D644E /* UpdateAccountViewController.swift */,
 				1A0F194E1F10934000A7C52C /* CustomerViewController.swift */,
 			);
@@ -378,8 +438,6 @@
 				1AF51FFF1F0BA27D005720E2 /* Sources */,
 				1AF520001F0BA27D005720E2 /* Frameworks */,
 				1AF520011F0BA27D005720E2 /* Resources */,
-				5ED9A18B909336783E5ABFF2 /* [CP] Embed Pods Frameworks */,
-				A6D37D710783AD67F2807A65 /* [CP] Copy Pods Resources */,
 				A7E0B78922452FAC006C084E /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -468,11 +526,14 @@
 				A7571E612255B35500352E78 /* GoogleService-Info.plist in Resources */,
 				1ADBCD301F39BCE500E2E0AF /* sendrequest.gif in Resources */,
 				1AF520141F0BA27D005720E2 /* LaunchScreen.storyboard in Resources */,
+				1FB6E6F422B9EC150085FC72 /* MessageContent.xib in Resources */,
 				1A4F3A871F3B0B56006458D9 /* Messenger.gif in Resources */,
 				1ADBCD321F39CC3700E2E0AF /* Calendar.gif in Resources */,
 				1AF520111F0BA27D005720E2 /* Assets.xcassets in Resources */,
 				A708A3DE221CF780003DBF5C /* BookService.storyboard in Resources */,
 				1A4F3A851F3AF025006458D9 /* profile.gif in Resources */,
+				1FB6E6EC22B9D12A0085FC72 /* PersonalBookingInfo.xib in Resources */,
+				1FB6E6F922B9F6FE0085FC72 /* SendMessage.xib in Resources */,
 				1A6679631F0E48E4002BF0E0 /* 1.gif in Resources */,
 				1AF5200C1F0BA27D005720E2 /* Main.storyboard in Resources */,
 			);
@@ -488,28 +549,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5ED9A18B909336783E5ABFF2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Clean/Pods-Clean-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clean/Pods-Clean-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		952DC02F4E234DED14A08650 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,21 +565,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6D37D710783AD67F2807A65 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clean/Pods-Clean-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -562,6 +586,7 @@
 				1A0F194F1F10934000A7C52C /* CustomerViewController.swift in Sources */,
 				A708A3EB221D397C003DBF5C /* ConfirmBookingViewController.swift in Sources */,
 				A7FEA349222C17F5002B88A5 /* CustomerBookingTableViewCell.swift in Sources */,
+				1FB6E6F622B9EC230085FC72 /* MessageContentViewController.swift in Sources */,
 				A779AEA9222431780022168B /* DateTableViewCell.swift in Sources */,
 				A706EB8C2224F52F006D7A3A /* BookingTimeTableViewCell.swift in Sources */,
 				E89047B322B29284000B2BF3 /* ConfirmBookingableViewCell.swift in Sources */,
@@ -570,18 +595,17 @@
 				A7212F54222D220B00D03265 /* ReviewBookingViewController.swift in Sources */,
 				1A0F19531F10C65900A7C52C /* ServerCominucation.swift in Sources */,
 				1A8F51301F0C7FE300103966 /* DataModification.swift in Sources */,
+				1FB6E6FB22B9F7580085FC72 /* SendMessagePopupViewController.swift in Sources */,
 				A708A3E7221D11AF003DBF5C /* Order.swift in Sources */,
 				1AF520091F0BA27D005720E2 /* ViewController.swift in Sources */,
 				A7D6620B22219C4500072C53 /* LocationViewController.swift in Sources */,
 				A7761159222925F200DB4CD2 /* LoginViewController.swift in Sources */,
 				A72513AC2259FD7B00208479 /* HomeBookingViewController.swift in Sources */,
-				A7FEA7CD222FB299000E90E3 /* MessageDetailViewController.swift in Sources */,
 				A749C14B2226741A00745238 /* WeekdaysView.swift in Sources */,
 				1FD9B7BC22B3403100F8B46B /* UITableView+extension.swift in Sources */,
 				A78916D6222986660083305A /* AccountViewController.swift in Sources */,
 				1A66795D1F0E3C32002BF0E0 /* LoadGif.swift in Sources */,
 				A749C14C2226741A00745238 /* CalenderView.swift in Sources */,
-				A779AEAB222439EF0022168B /* PersonalViewController.swift in Sources */,
 				A731388D221EA1E200F47C96 /* CustomIndicator.swift in Sources */,
 				1AF520071F0BA27D005720E2 /* AppDelegate.swift in Sources */,
 				A776115F2229398600DB4CD2 /* NotificationTableViewCell.swift in Sources */,
@@ -590,9 +614,10 @@
 				1AF5200F1F0BA27D005720E2 /* Clean.xcdatamodeld in Sources */,
 				A708A3E3221D0522003DBF5C /* PickerDefinition.swift in Sources */,
 				A706EB8A2224E1DD006D7A3A /* PersonInfoTableViewCell.swift in Sources */,
+				1FB6E6EF22B9D2FA0085FC72 /* PopupDialogHelper.swift in Sources */,
 				1A9ED0C11F2C502600968AF3 /* Message.swift in Sources */,
+				1FB6E6F122B9DADB0085FC72 /* PersonalBookingInfoViewController.swift in Sources */,
 				A72513AE225A02D400208479 /* DeepPostServiceViewController.swift in Sources */,
-				A78916D8222992A10083305A /* SendMessageViewController.swift in Sources */,
 				A77D0B022232BDE1003D644E /* AccountTableViewCell.swift in Sources */,
 				1FD9B7BE22B34F8200F8B46B /* ConfirmButtonTableViewCell.swift in Sources */,
 				A779AEA722242B490022168B /* BookServiceViewController.swift in Sources */,

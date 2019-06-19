@@ -35,6 +35,10 @@ class ConfirmBookingTableViewController: UITableViewController {
         tableView.reload(animationDirection: .down)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let orderAction = Order()
+        orderAction.AddBooking(order.name, order.address, "", order.phone, order.date, order.totalTime, order.total, order.note, "")
+    }
     override func viewWillAppear(_ animated: Bool) {
         title = "XÁC NHẬN DỊCH VỤ"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem()
